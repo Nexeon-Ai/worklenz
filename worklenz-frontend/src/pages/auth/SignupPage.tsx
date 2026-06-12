@@ -45,7 +45,7 @@ const SignupPage = () => {
   const { t } = useTranslation('auth/signup');
   const isMobile = useMediaQuery({ query: '(max-width: 576px)' });
 
-  useDocumentTitle('Signup');
+  useDocumentTitle(t('documentTitle', { defaultValue: 'Signup' }));
 
   const [loading, setLoading] = useState(false);
   const [validating, setValidating] = useState(false);
@@ -224,7 +224,7 @@ const SignupPage = () => {
         await signUpWithEmail(body);
       }
     } catch (error: any) {
-      message.error(error?.response?.data?.message || 'Failed to validate signup details');
+      message.error(error?.response?.data?.message || t('signupCheckErrorMessage'));
     } finally {
       setValidating(false);
     }
@@ -248,13 +248,13 @@ const SignupPage = () => {
       }
       const result = await dispatch(signUp(body)).unwrap();
       if (result?.authenticated) {
-        message.success('Successfully signed up!');
+        message.success(t('signupSuccessMessage'));
         setTimeout(() => {
           navigate('/auth/authenticating');
         }, 1000);
       }
     } catch (error: any) {
-      message.error(error?.response?.data?.message || 'Failed to sign up');
+      message.error(error?.response?.data?.message || t('signupErrorMessage'));
     } finally {
       setLoading(false);
     }
@@ -267,7 +267,7 @@ const SignupPage = () => {
       const url = `${import.meta.env.VITE_API_URL}/secure/google${queryParams ? `?${queryParams}` : ''}`;
       window.location.href = url;
     } catch (error) {
-      message.error('Failed to redirect to Google sign up');
+      message.error(t('googleSignUpRedirectErrorMessage'));
     }
   };
 

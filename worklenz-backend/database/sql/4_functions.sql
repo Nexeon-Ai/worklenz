@@ -339,14 +339,14 @@ BEGIN
 
     -- Insert task's statuses
     INSERT INTO task_statuses (name, project_id, team_id, category_id)
-    VALUES ('To do', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_todo IS TRUE))
+    VALUES ('قيد الانتظار', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_todo IS TRUE))
     RETURNING id INTO _default_status_id;
 
     INSERT INTO task_statuses (name, project_id, team_id, category_id)
-    VALUES ('Doing', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_doing IS TRUE));
+    VALUES ('قيد التنفيذ', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_doing IS TRUE));
 
     INSERT INTO task_statuses (name, project_id, team_id, category_id)
-    VALUES ('Done', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_done IS TRUE));
+    VALUES ('منجز', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_done IS TRUE));
 
     SELECT id FROM team_members WHERE user_id = _user_id AND team_id = _team_id INTO _team_member_id;
 
@@ -659,11 +659,11 @@ BEGIN
 
     -- insert statuses
     INSERT INTO task_statuses (name, project_id, team_id, category_id, sort_order)
-    VALUES ('To Do', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_todo IS TRUE), 0);
+    VALUES ('قيد الانتظار', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_todo IS TRUE), 0);
     INSERT INTO task_statuses (name, project_id, team_id, category_id, sort_order)
-    VALUES ('Doing', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_doing IS TRUE), 1);
+    VALUES ('قيد التنفيذ', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_doing IS TRUE), 1);
     INSERT INTO task_statuses (name, project_id, team_id, category_id, sort_order)
-    VALUES ('Done', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_done IS TRUE), 2);
+    VALUES ('منجز', _project_id, _team_id, (SELECT id FROM sys_task_status_categories WHERE is_done IS TRUE), 2);
 
     -- insert default columns for task list
     PERFORM insert_task_list_columns(_project_id);

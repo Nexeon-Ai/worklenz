@@ -48,5 +48,8 @@
 
   "setCategoryText": "تعيين الفئة",
   "searchByNameInputPlaceholder": "البحث بالاسم",
-  "todayText": "اليوم"
+  "todayText": "اليوم",
+  "setStartDatePlaceholder": "تعيين تاريخ البدء",
+  "setEndDatePlaceholder": "تعيين تاريخ الانتهاء",
+  "hitEnterToCreate": "اضغط Enter للإنشاء!"
 }

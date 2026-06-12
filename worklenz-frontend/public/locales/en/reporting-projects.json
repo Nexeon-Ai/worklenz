@@ -48,5 +48,8 @@
 
   "setCategoryText": "Set Category",
   "searchByNameInputPlaceholder": "Search by name",
-  "todayText": "Today"
+  "todayText": "Today",
+  "setStartDatePlaceholder": "Set Start Date",
+  "setEndDatePlaceholder": "Set End Date",
+  "hitEnterToCreate": "Hit enter to create!"
 }

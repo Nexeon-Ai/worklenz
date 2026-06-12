@@ -86,5 +86,6 @@
   "notSetText": "غير محدد",
   "needsAttentionText": "يحتاج إلى اهتمام",
   "atRiskText": "في خطر",
-  "goodText": "جيد"
+  "goodText": "جيد",
+  "noneText": "بلا"
 }

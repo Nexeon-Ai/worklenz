@@ -28,5 +28,22 @@
     "accept": "قبول",
     "acceptAndJoin": "قبول وانضمام",
     "noNotifications": "لا توجد إشعارات"
-  }
+  },
+  "timers-error-loading": "خطأ في تحميل المؤقتات",
+  "timers-none-running": "لا توجد مؤقتات قيد التشغيل",
+  "timers-unnamed-task": "مهمة بلا اسم",
+  "timers-unnamed-project": "مشروع بلا اسم",
+  "timers-parent": "المهمة الأصل: {{name}}",
+  "timers-started": "بدأ:",
+  "timers-stop": "إيقاف",
+  "timers-running-count_zero": "لا مؤقتات قيد التشغيل",
+  "timers-running-count_one": "مؤقت واحد قيد التشغيل",
+  "timers-running-count_two": "مؤقتان قيد التشغيل",
+  "timers-running-count_few": "{{count}} مؤقتات قيد التشغيل",
+  "timers-running-count_many": "{{count}} مؤقتاً قيد التشغيل",
+  "timers-running-count_other": "{{count}} مؤقت قيد التشغيل",
+  "timers-tooltip": "المؤقتات قيد التشغيل",
+  "timers-error-tooltip": "خطأ في المؤقت",
+  "account": "الحساب",
+  "timers-error-rendering": "خطأ في عرض المؤقتات"
 }

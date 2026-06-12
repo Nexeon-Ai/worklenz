@@ -1,5 +1,6 @@
 import React, { useEffect, memo, useMemo, useCallback } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
 import Col from 'antd/es/col';
 import Flex from 'antd/es/flex';
 import Row from 'antd/es/row';
@@ -35,10 +36,11 @@ const SurveyPromptModal = React.lazy(() =>
 
 const HomePage = memo(() => {
   const dispatch = useAppDispatch();
+  const { t } = useTranslation('home');
   const isDesktop = useMediaQuery({ query: `(min-width: ${DESKTOP_MIN_WIDTH}px)` });
   const isOwnerOrAdmin = useAuthService().isOwnerOrAdmin();
 
-  useDocumentTitle('Home');
+  useDocumentTitle(t('documentTitle', { defaultValue: 'Home' }));
 
   // Preload TaskDrawer component to prevent dynamic import failures
   useEffect(() => {

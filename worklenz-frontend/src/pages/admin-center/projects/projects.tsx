@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
 
   const columns: TableProps['columns'] = [
     {
-      title: 'Project name',
+      title: t('projectName'),
       key: 'projectName',
       render: (record: IOrganizationProject) => (
         <Typography.Text
@@ -101,7 +101,7 @@ const Projects: React.FC = () => {
       ),
     },
     {
-      title: 'Team',
+      title: t('teamName'),
       key: 'team',
       render: (record: IOrganizationProject) => (
         <Typography.Text
@@ -129,7 +129,7 @@ const Projects: React.FC = () => {
       ),
     },
     {
-      title: <span style={{ display: 'flex', justifyContent: 'center' }}>Created at</span>,
+      title: <span style={{ display: 'flex', justifyContent: 'center' }}>{t('createdAt')}</span>,
       key: 'createdAt',
       render: (record: IOrganizationProject) => (
         <Typography.Text
@@ -167,7 +167,7 @@ const Projects: React.FC = () => {
 
   return (
     <div style={{ width: '100%' }}>
-      <PageHeader title={<span>Projects</span>} style={{ padding: '16px 0' }} />
+      <PageHeader title={<span>{t('title')}</span>} style={{ padding: '16px 0' }} />
       <PageHeader
         style={{
           paddingLeft: 0,
@@ -183,7 +183,7 @@ const Projects: React.FC = () => {
               fontSize: '16px',
             }}
           >
-            {projects.length} projects
+            {t('projectsCount', { count: projects.length })}
           </span>
         }
         extra={

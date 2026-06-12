@@ -1,5 +1,6 @@
 import { DatePicker, Flex, Typography } from '@/shared/antd-imports';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { colors } from '@/styles/colors';
 import dayjs, { Dayjs } from 'dayjs';
 import { useSocket } from '@/socket/socketContext';
@@ -18,6 +19,7 @@ type ProjectDatesCellProps = {
 };
 
 const ProjectDatesCell = ({ projectId, startDate, endDate }: ProjectDatesCellProps) => {
+  const { t } = useTranslation('reporting-projects');
   const dispatch = useAppDispatch();
   const startDayjs = startDate ? dayjs(startDate) : null;
   const endDayjs = endDate ? dayjs(endDate) : null;
@@ -95,7 +97,7 @@ const ProjectDatesCell = ({ projectId, startDate, endDate }: ProjectDatesCellPro
     <Flex gap={4}>
       <DatePicker
         disabledDate={current => current > (endDayjs || dayjs())}
-        placeholder="Set Start Date"
+        placeholder={t('setStartDatePlaceholder')}
         defaultValue={startDayjs}
         format={'MMM DD, YYYY'}
         suffixIcon={null}
@@ -111,7 +113,7 @@ const ProjectDatesCell = ({ projectId, startDate, endDate }: ProjectDatesCellPro
 
       <DatePicker
         disabledDate={current => current < (startDayjs || dayjs())}
-        placeholder="Set End Date"
+        placeholder={t('setEndDatePlaceholder')}
         defaultValue={endDayjs}
         format={'MMM DD, YYYY'}
         suffixIcon={null}

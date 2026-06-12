@@ -100,13 +100,15 @@ const AccountSetup: React.FC = () => {
           // Use the first part of the domain (before the first dot)
           const org = domain.split('.')[0];
           if (org && org.length > 1) {
-            return `e.g. ${org.charAt(0).toUpperCase() + org.slice(1)} Team`;
+            return t('orgNamePlaceholderCompany', {
+              name: org.charAt(0).toUpperCase() + org.slice(1),
+            });
           }
         }
       }
     }
     // Fallback to user name
-    return name ? `e.g. ${name}'s Team` : '';
+    return name ? t('orgNamePlaceholderPersonal', { name }) : '';
   }
 
   const organizationNamePlaceholder = getOrganizationNamePlaceholder(userDetails);
@@ -511,7 +513,7 @@ const AccountSetup: React.FC = () => {
           onClick={handleThemeToggle}
           className="flex items-center"
           style={{ color: token?.colorTextTertiary }}
-          title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+          title={isDarkMode ? t('switchToLightMode') : t('switchToDarkMode')}
         />
         
         {/* Language Switcher */}

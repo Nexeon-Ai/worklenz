@@ -1,7 +1,8 @@
-name: Build & publish Arabic Worklenz frontend (GHCR)
+name: Build & publish Arabic Worklenz images (GHCR)
 
-# Builds the Worklenz frontend with Arabic + RTL support and publishes it to
-# this fork's GitHub Container Registry so the Coolify deployment can pull it.
+# Builds the Worklenz frontend (Arabic + RTL UI) and backend (Arabic emails &
+# notifications) and publishes them to this fork's GitHub Container Registry
+# so the Coolify deployment can pull them.
 
 on:
   workflow_dispatch:
@@ -14,6 +15,7 @@ on:
     branches: [feat/arabic-rtl]
     paths:
       - 'worklenz-frontend/**'
+      - 'worklenz-backend/**'
       - '.github/workflows/build-arabic-frontend.yml'
 
 permissions:
@@ -23,7 +25,10 @@ permissions:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
+    strategy:
+      matrix:
+        component: [frontend, backend]
     steps:
       - uses: actions/checkout@v5
 
@@ -41,14 +46,14 @@ jobs:
         run: |
           OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           MOVING="${{ github.event.inputs.tag || 'ar' }}"
-          echo "tags=ghcr.io/${OWNER}/worklenz-frontend:${MOVING},ghcr.io/${OWNER}/worklenz-frontend:ar-${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
+          echo "tags=ghcr.io/${OWNER}/worklenz-${{ matrix.component }}:${MOVING},ghcr.io/${OWNER}/worklenz-${{ matrix.component }}:ar-${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
 
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: ./worklenz-frontend
+          context: ./worklenz-${{ matrix.component }}
           platforms: linux/amd64
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          cache-from: type=gha,scope=${{ matrix.component }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.component }}

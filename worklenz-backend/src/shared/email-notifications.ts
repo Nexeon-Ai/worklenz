@@ -38,14 +38,14 @@ export async function sendAssignmentUpdate(toEmail: string, assignment: ITaskAss
     const template = FileConstants.getEmailTemplate(IEmailTemplateType.TaskAssigneeChange) as compileTemplate;
     const isSent = assignment.teams?.length
       ? await sendEmail({
-        subject: "You have new assignments on Worklenz",
+        subject: "لديك مهام جديدة مسندة إليك على Worklenz",
         to: [toEmail],
         html: template(assignment)
       })
       : true;
 
     await updateTaskUpdatesStatus(!!isSent);
-    addToEmailLogs(toEmail, "You have new assignments on Worklenz", template(assignment));
+    addToEmailLogs(toEmail, "لديك مهام جديدة مسندة إليك على Worklenz", template(assignment));
   } catch (e) {
     log_error(e);
     await updateTaskUpdatesStatus(false);

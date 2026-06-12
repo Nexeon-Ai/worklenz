@@ -49,7 +49,7 @@ const LoginPage: React.FC = () => {
 
   const enableGoogleLogin = import.meta.env.VITE_ENABLE_GOOGLE_LOGIN === 'true' || false;
 
-  useDocumentTitle('Login');
+  useDocumentTitle(t('documentTitle', { defaultValue: 'Login' }));
 
   const validationRules = {
     email: [

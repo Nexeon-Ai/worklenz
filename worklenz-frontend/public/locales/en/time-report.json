@@ -53,5 +53,13 @@
   "showSelected": "Show Selected Only",
   "expandAll": "Expand All",
   "collapseAll": "Collapse All",
-  "ungrouped": "Ungrouped"
+  "ungrouped": "Ungrouped",
+  "project": "Project",
+  "endsOn": "Ends On",
+  "utilization": "Utilization",
+  "overUnderUtilized": "Over/Under Utilized",
+  "loading": "Loading...",
+  "noDataAvailable": "No data available",
+  "timezone": "Timezone",
+  "timezoneTooltip": "All time logs are displayed in your local timezone. Times were logged by users in their respective timezones and converted for your viewing."
 }

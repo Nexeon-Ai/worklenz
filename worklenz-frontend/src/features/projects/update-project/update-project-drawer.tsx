@@ -13,6 +13,7 @@ import {
   Typography,
 } from '@/shared/antd-imports';
 import React, { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   healthStatusData,
   projectColors,
@@ -29,6 +30,7 @@ import ProjectList from '../../../pages/projects/ProjectList';
 import { CategoryType } from '../../../types/categories.types';
 
 const UpdateProjectDrawer = () => {
+  const { t } = useTranslation('update-project-drawer');
   const currentlyActiveTeamData = useAppSelector(state => state.teamReducer.teamsList).find(
     item => item.isActive
   );
@@ -136,7 +138,7 @@ const UpdateProjectDrawer = () => {
   return (
     <Drawer
       title={
-        <Typography.Text style={{ fontWeight: 500, fontSize: 16 }}>Update Project</Typography.Text>
+        <Typography.Text style={{ fontWeight: 500, fontSize: 16 }}>{t('update-project')}</Typography.Text>
       }
       open={isDrawerOpen}
       onClose={() => dispatch(toggleUpdatedrawer(''))}
@@ -157,17 +159,17 @@ const UpdateProjectDrawer = () => {
       >
         <Form.Item
           name="name"
-          label="Name"
+          label={t('name-label')}
           rules={[
             {
               required: true,
-              message: 'Please enter a Name',
+              message: t('name-required'),
             },
           ]}
         >
-          <Input placeholder="Name" />
+          <Input placeholder={t('name-placeholder')} />
         </Form.Item>
-        <Form.Item name="color" label="Project Color" layout="horizontal" required>
+        <Form.Item name="color" label={t('project-color-label')} layout="horizontal" required>
           <Select
             variant="borderless"
             suffixIcon={null}
@@ -177,17 +179,17 @@ const UpdateProjectDrawer = () => {
             }}
           />
         </Form.Item>
-        <Form.Item name="status" label="Status">
+        <Form.Item name="status" label={t('status-label')}>
           <Select options={statusOptions} />
         </Form.Item>
-        <Form.Item name="health" label="Health">
+        <Form.Item name="health" label={t('health-label')}>
           <Select options={healthOptions} />
         </Form.Item>
-        <Form.Item name="category" label="Category">
+        <Form.Item name="category" label={t('category-label')}>
           {!isAddCategoryInputShow ? (
             <Select
               options={categoriesList}
-              placeholder="Add a category to the project"
+              placeholder={t('category-placeholder')}
               dropdownRender={() => (
                 <Button
                   style={{ width: '100%' }}
@@ -195,7 +197,7 @@ const UpdateProjectDrawer = () => {
                   icon={<PlusOutlined />}
                   onClick={handleShowAddCategoryInput}
                 >
-                  New Category
+                  {t('new-category')}
                 </Button>
               )}
             />
@@ -203,67 +205,67 @@ const UpdateProjectDrawer = () => {
             <Flex vertical gap={4}>
               <Input
                 ref={categoryInputRef}
-                placeholder="Enter a name for the category"
+                placeholder={t('category-input-placeholder')}
                 value={categoryText}
                 onChange={e => setCategoryText(e.currentTarget.value)}
                 onKeyDown={e => e.key === 'Enter' && handleAddCategoryItem(categoryText)}
               />
               <Typography.Text style={{ color: colors.lightGray }}>
-                Hit enter to create!
+                {t('hit-enter-to-create')}
               </Typography.Text>
             </Flex>
           )}
         </Form.Item>
-        <Form.Item name="notes" label="Notes">
-          <Input.TextArea placeholder="Notes" />
+        <Form.Item name="notes" label={t('notes-label')}>
+          <Input.TextArea placeholder={t('notes-placeholder')} />
         </Form.Item>
         <Form.Item
           name="client"
           label={
             <Typography.Text>
-              Client <QuestionCircleOutlined />
+              {t('client-label')} <QuestionCircleOutlined />
             </Typography.Text>
           }
         >
-          <Input placeholder="Select client" />
+          <Input placeholder={t('client-placeholder')} />
         </Form.Item>
-        <Form.Item name="projectManager" label="Project Manager" layout="horizontal">
+        <Form.Item name="projectManager" label={t('project-manager-label')} layout="horizontal">
           <Button type="dashed" shape="circle" icon={<PlusCircleOutlined />} />
         </Form.Item>
         <Form.Item name="date" layout="horizontal">
           <Flex gap={8}>
-            <Form.Item name="startDate" label="Start Date">
+            <Form.Item name="startDate" label={t('start-date-label')}>
               <DatePicker />
             </Form.Item>
-            <Form.Item name="endDate" label="End Date">
+            <Form.Item name="endDate" label={t('end-date-label')}>
               <DatePicker />
             </Form.Item>
           </Flex>
         </Form.Item>
-        <Form.Item name="estWorkingDays" label="Estimate working days">
+        <Form.Item name="estWorkingDays" label={t('est-working-days-label')}>
           <Input type="number" />
         </Form.Item>
-        <Form.Item name="estManDays" label="Estimate man days">
+        <Form.Item name="estManDays" label={t('est-man-days-label')}>
           <Input type="number" />
         </Form.Item>
-        <Form.Item name="hrsPerDay" label="Hours per day">
+        <Form.Item name="hrsPerDay" label={t('hours-per-day-label')}>
           <Input type="number" />
         </Form.Item>
 
         <Button type="primary" style={{ width: '100%' }} htmlType="submit">
-          Save Changes
+          {t('save-changes')}
         </Button>
         <Button type="dashed" danger style={{ width: '100%', marginTop: '8px' }} htmlType="submit">
-          Delete Project
+          {t('delete-project')}
         </Button>
       </Form>
       <Divider style={{ marginTop: '1rem', marginBottom: '0.5rem' }} />
       <div style={{ paddingBottom: '0.25rem', display: 'flex', flexDirection: 'column' }}>
         <Typography.Text type="secondary">
-          <small> Created a day ago by Raveesha Dilanka </small>
+          <small> {t('created-a-day-ago-by', { name: 'Raveesha Dilanka' })} </small>
         </Typography.Text>
         <Typography.Text type="secondary">
-          <small> Updated a day ago </small>
+          <small> {t('updated-a-day-ago')} </small>
         </Typography.Text>
       </div>
     </Drawer>

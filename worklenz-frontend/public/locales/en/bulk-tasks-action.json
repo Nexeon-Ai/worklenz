@@ -1,0 +1,10 @@
+{
+  "tasks-selected_one": "{{count}} task selected",
+  "tasks-selected_other": "{{count}} tasks selected",
+  "change-status-priority-phases": "Change Status/ Priority/ Phases",
+  "change-label": "Change Label",
+  "assign-to-me": "Assign to me",
+  "assign-members": "Assign members",
+  "more-options": "More options",
+  "deselect-all": "Deselect all"
+}

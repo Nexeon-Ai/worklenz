@@ -93,8 +93,8 @@ const MembersTimeSheet = forwardRef<MembersTimeSheetRef>((_, ref) => {
             const overUnder = member?.over_under_utilized_hours || '0.00';
             return [
               `${context.dataset.label}: ${hours} h`,
-              `Utilization: ${percent}%`,
-              `Over/Under Utilized: ${overUnder} h`,
+              `${t('utilization')}: ${percent}%`,
+              `${t('overUnderUtilized')}: ${overUnder} h`,
             ];
           },
         },

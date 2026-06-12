@@ -32,10 +32,10 @@ const VerifyResetEmailPage = () => {
 
   const navigate = useNavigate();
   const { trackMixpanelEvent } = useMixpanelTracking();
-  useDocumentTitle('Verify Reset Email');
   const dispatch = useAppDispatch();
 
   const { t } = useTranslation('auth/verify-reset-email');
+  useDocumentTitle(t('title', { defaultValue: 'Verify Reset Email' }));
 
   const isMobile = useMediaQuery({ query: '(max-width: 576px)' });
   const themeMode = useAppSelector(state => state.themeReducer.mode);

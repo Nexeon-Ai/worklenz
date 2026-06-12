@@ -44,7 +44,7 @@ const ActivityLogCard = ({ data }: ActivityLogCardProps) => {
 
   // this function render the colord tag
   const renderStyledTag = (value: TaskStatus | null) => {
-    if (!value) return <Tag>None</Tag>;
+    if (!value) return <Tag>{t('noneText')}</Tag>;
     return (
       <Tag style={{ color: colors.darkGray, borderRadius: 48 }} color={value.color_code}>
         {value.name}
@@ -53,7 +53,7 @@ const ActivityLogCard = ({ data }: ActivityLogCardProps) => {
   };
 
   // this function render the default normal tag
-  const renderDefaultTag = (value: string | null) => <Tag>{value || 'None'}</Tag>;
+  const renderDefaultTag = (value: string | null) => <Tag>{value || t('noneText')}</Tag>;
 
   // this function render the tag conditionally if type status, priority or phases then return colord tag else return default tag
   const renderTag = (log: ISingleMemberActivityLog, type: 'previous' | 'current') => {

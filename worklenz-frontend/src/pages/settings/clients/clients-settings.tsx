@@ -118,7 +118,7 @@ const ClientsSettings: React.FC = () => {
         render: (record: IClientViewModel) =>
           hoverRow === record.id && (
             <Flex gap={8} style={{ padding: 0 }}>
-              <Tooltip title="Edit">
+              <Tooltip title={t('editTooltip')}>
                 <Button
                   size="small"
                   icon={<EditOutlined />}
@@ -132,7 +132,7 @@ const ClientsSettings: React.FC = () => {
                 cancelText={t('deleteConfirmationCancel')}
                 onConfirm={() => deleteClientHandler(record.id)}
               >
-                <Tooltip title="Delete">
+                <Tooltip title={t('deleteTooltip')}>
                   <Button
                     shape="default"
                     icon={<DeleteOutlined />}

@@ -1,6 +1,7 @@
 import { StarFilled } from '@/shared/antd-imports';
 import { Button, ConfigProvider, Tooltip } from '@/shared/antd-imports';
 import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { colors } from '@/styles/colors';
 import { IProjectViewModel } from '@/types/project/projectViewModel.types';
 import { projectsApiService } from '@/api/projects/projects.api.service';
@@ -11,6 +12,7 @@ type AddFavouriteProjectButtonProps = {
 };
 
 const AddFavouriteProjectButton = ({ record, handleRefresh }: AddFavouriteProjectButtonProps) => {
+  const { t } = useTranslation('home');
   const checkIconColor = useMemo(
     () => (record.favorite ? colors.yellow : colors.lightGray),
     [record.favorite]
@@ -24,7 +26,9 @@ const AddFavouriteProjectButton = ({ record, handleRefresh }: AddFavouriteProjec
 
   return (
     <ConfigProvider wave={{ disabled: true }}>
-      <Tooltip title={record.favorite ? 'Remove from favorites' : 'Add to favourites'}>
+      <Tooltip
+        title={record.favorite ? t('projects.removeFromFavourites') : t('projects.addToFavourites')}
+      >
         <Button
           type="text"
           className="borderless-icon-btn"

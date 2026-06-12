@@ -1,4 +1,5 @@
 {
+  "documentTitle": "Signup",
   "headerDescription": "Sign up to get started",
   "nameLabel": "Full Name",
   "namePlaceholder": "Enter your full name",
@@ -27,5 +28,15 @@
   "loginButton": "Login",
   "orText": "OR",
   "reCAPTCHAVerificationError": "reCAPTCHA Verification Error",
-  "reCAPTCHAVerificationErrorMessage": "We were unable to verify your reCAPTCHA. Please try again."
+  "reCAPTCHAVerificationErrorMessage": "We were unable to verify your reCAPTCHA. Please try again.",
+  "signupCheckErrorMessage": "Failed to validate signup details",
+  "signupErrorMessage": "Failed to sign up",
+  "googleSignUpRedirectErrorMessage": "Failed to redirect to Google sign up",
+  "passwordChecklist": {
+    "minLength": "At least 8 characters",
+    "uppercase": "One uppercase letter",
+    "lowercase": "One lowercase letter",
+    "number": "One number",
+    "special": "One special character"
+  }
 }

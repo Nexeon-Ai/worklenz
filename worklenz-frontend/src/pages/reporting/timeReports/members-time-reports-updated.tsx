@@ -28,7 +28,7 @@ const MembersTimeReports = () => {
   return (
     <Flex vertical>
       <TimeReportingRightHeader
-        title={t('Members Time Sheet')}
+        title={t('membersTimeSheet')}
         exportType={[{ key: 'png', label: 'PNG' }]}
         export={handleExport}
       />
@@ -39,12 +39,12 @@ const MembersTimeReports = () => {
           <div style={{ padding: '16px 0' }}>
             <Flex justify="space-between" align="center">
               <TimeReportPageHeader />
-              <Tooltip 
-                title={`All time logs are displayed in your local timezone. Times were logged by users in their respective timezones and converted for your viewing.`}
+              <Tooltip
+                title={t('timezoneTooltip')}
               >
                 <Text type="secondary" style={{ fontSize: 12 }}>
                   <InfoCircleOutlined style={{ marginRight: 4 }} />
-                  Timezone: {timezone} ({timezoneOffset})
+                  {t('timezone')}: {timezone} ({timezoneOffset})
                 </Text>
               </Tooltip>
             </Flex>

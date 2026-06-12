@@ -6,5 +6,6 @@
   "associatedTaskColumn": "المشاريع المرتبطة",
   "searchPlaceholder": "البحث بالاسم",
   "emptyText": "يمكن إنشاء الفئات أثناء تحديث المشاريع أو إنشائها.",
-  "colorChangeTooltip": "انقر لتغيير اللون"
+  "colorChangeTooltip": "انقر لتغيير اللون",
+  "deleteTooltip": "حذف"
 }

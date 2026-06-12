@@ -64,7 +64,7 @@ export class NotificationsService {
   }
 
   public static sendInvitation(userId: string, userName: string, teamName: string, teamId: string, teamMemberId: string) {
-    const message = `<b>${userName}</b> has invited you to work with <b>${teamName}</b>.`;
+    const message = `<b>${userName}</b> دعاك للعمل ضمن <b>${teamName}</b>.`;
     const payload = {message, team: teamName, team_id: teamId};
     IO.emitByTeamMemberId(teamMemberId, userId || null, SocketEvents.INVITATIONS_UPDATE, payload);
   }

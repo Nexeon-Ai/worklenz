@@ -252,7 +252,7 @@ const AddTaskInlineForm = ({ t, calendarView }: AddTaskInlineFormProps) => {
         {isProjectFieldShowing && (
           <Select
             suffixIcon={null}
-            placeholder={'Project'}
+            placeholder={t('home:tasks.project')}
             options={projectOptions}
             defaultOpen
             showSearch

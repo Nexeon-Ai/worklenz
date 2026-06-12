@@ -148,12 +148,12 @@ export default class TaskCommentsController extends WorklenzControllerBase {
       }
     }
 
-    const mentionMessage = `<b>${req.user?.name}</b> has mentioned you in a comment on <b>${response.task_name}</b> (${response.team_name})`;
+    const mentionMessage = `<b>${req.user?.name}</b> أشار إليك في تعليق على <b>${response.task_name}</b> (${response.team_name})`;
     // const mentions = [...new Set(req.body.mentions || [])] as string[]; // remove duplicates
 
     const assignees = await getAssignees(req.body.task_id);
 
-    const commentMessage = `<b>${req.user?.name}</b> added a comment on <b>${response.task_name}</b> (${response.team_name})`;
+    const commentMessage = `<b>${req.user?.name}</b> أضاف تعليقاً على <b>${response.task_name}</b> (${response.team_name})`;
     for (const member of assignees || []) {
       if (member.user_id && member.user_id === req.user?.id) continue;
 
@@ -281,12 +281,12 @@ export default class TaskCommentsController extends WorklenzControllerBase {
 
     const response = data.comment;
 
-    const mentionMessage = `<b>${req.user?.name}</b> has mentioned you in a comment on <b>${response.task_name}</b> (${response.team_name})`;
+    const mentionMessage = `<b>${req.user?.name}</b> أشار إليك في تعليق على <b>${response.task_name}</b> (${response.team_name})`;
     // const mentions = [...new Set(req.body.mentions || [])] as string[]; // remove duplicates
 
     const assignees = await getAssignees(req.body.task_id);
 
-    const commentMessage = `<b>${req.user?.name}</b> added a comment on <b>${response.task_name}</b> (${response.team_name})`;
+    const commentMessage = `<b>${req.user?.name}</b> أضاف تعليقاً على <b>${response.task_name}</b> (${response.team_name})`;
     for (const member of assignees || []) {
       if (member.user_id && member.user_id === req.user?.id) continue;
 
@@ -359,7 +359,7 @@ export default class TaskCommentsController extends WorklenzControllerBase {
     const settingsUrl = `${getBaseUrl()}/worklenz/settings/notifications`;
 
     const data: ICommentEmailNotification = {
-      greeting: `Hi ${config.receiverName}`,
+      greeting: `مرحباً ${config.receiverName}`,
       summary: subject,
       team: config.teamName,
       project_name: config.projectName,
@@ -532,7 +532,7 @@ export default class TaskCommentsController extends WorklenzControllerBase {
       await db.query(q, [id, req.user?.id, req.user?.team_member_id]);
 
       const getTaskCommentData = await TaskCommentsController.getTaskCommentData(id);
-      const commentMessage = `<b>${getTaskCommentData.reactor_name}</b> liked your comment on <b>${getTaskCommentData.task_name}</b> (${getTaskCommentData.team_name})`;
+      const commentMessage = `<b>${getTaskCommentData.reactor_name}</b> أعجب بتعليقك على <b>${getTaskCommentData.task_name}</b> (${getTaskCommentData.team_name})`;
 
       if (getTaskCommentData && getTaskCommentData.user_id !== req.user?.id) {
         void NotificationsService.createNotification({
@@ -607,7 +607,7 @@ export default class TaskCommentsController extends WorklenzControllerBase {
 
     const assignees = await getAssignees(task_id);
 
-    const commentMessage = `<b>${req.user?.name}</b> added a new attachment as a comment on <b>${commentId.task_name}</b> (${commentId.team_name})`;
+    const commentMessage = `<b>${req.user?.name}</b> أضاف مرفقاً جديداً كتعليق على <b>${commentId.task_name}</b> (${commentId.team_name})`;
 
     for (const member of assignees || []) {
       if (member.user_id && member.user_id === req.user?.id) continue;

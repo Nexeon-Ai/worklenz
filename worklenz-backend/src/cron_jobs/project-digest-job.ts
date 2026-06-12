@@ -21,8 +21,8 @@ function updateTaskUrls(projectId: string, tasks: IProjectDigestTask[]) {
 }
 
 function updateMetadata(project: IProjectDigest, subscriberName: string) {
-  project.greeting = `Hi ${subscriberName},`;
-  project.summary = `Here's the "${project.name}" summary | ${project.team_name}`;
+  project.greeting = `مرحباً ${subscriberName}،`;
+  project.summary = `إليك ملخص مشروع "${project.name}" | ${project.team_name}`;
   project.settings_url = `${getBaseUrl()}/worklenz/settings/notifications`;
   project.project_url = `${getBaseUrl()}/worklenz/projects/${project.id}?tab=tasks-list`;
 }

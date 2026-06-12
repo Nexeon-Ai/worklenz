@@ -9,6 +9,7 @@ import {
   UsergroupAddOutlined,
 } from '@/shared/antd-imports';
 import { Button, Flex, Tooltip, Typography } from '@/shared/antd-imports';
+import { useTranslation } from 'react-i18next';
 import { colors } from '../../../styles/colors';
 
 type BulkTasksActionProps = {
@@ -17,6 +18,7 @@ type BulkTasksActionProps = {
 };
 
 const BulkTasksActionContainer = ({ selectedTaskIds, closeContainer }: BulkTasksActionProps) => {
+  const { t } = useTranslation('bulk-tasks-action');
   const selectedTasksCount = selectedTaskIds.length;
   return (
     <Flex
@@ -42,10 +44,10 @@ const BulkTasksActionContainer = ({ selectedTaskIds, closeContainer }: BulkTasks
     >
       <Typography.Text
         style={{ color: colors.white }}
-      >{`${selectedTasksCount} task${selectedTasksCount > 1 ? 's' : ''} selected`}</Typography.Text>
+      >{t('tasks-selected', { count: selectedTasksCount })}</Typography.Text>
 
       <Flex align="center">
-        <Tooltip title={'Change Status/ Prioriy/ Phases'}>
+        <Tooltip title={t('change-status-priority-phases')}>
           <Button
             icon={<RetweetOutlined />}
             className="borderless-icon-btn"
@@ -53,7 +55,7 @@ const BulkTasksActionContainer = ({ selectedTaskIds, closeContainer }: BulkTasks
           />
         </Tooltip>
 
-        <Tooltip title={'Change Label'}>
+        <Tooltip title={t('change-label')}>
           <Button
             icon={<TagsOutlined />}
             className="borderless-icon-btn"
@@ -61,7 +63,7 @@ const BulkTasksActionContainer = ({ selectedTaskIds, closeContainer }: BulkTasks
           />
         </Tooltip>
 
-        <Tooltip title={'Assign to me'}>
+        <Tooltip title={t('assign-to-me')}>
           <Button
             icon={<UserAddOutlined />}
             className="borderless-icon-btn"
@@ -69,7 +71,7 @@ const BulkTasksActionContainer = ({ selectedTaskIds, closeContainer }: BulkTasks
           />
         </Tooltip>
 
-        <Tooltip title={'Assign members'}>
+        <Tooltip title={t('assign-members')}>
           <Button
             icon={<UsergroupAddOutlined />}
             className="borderless-icon-btn"
@@ -77,7 +79,7 @@ const BulkTasksActionContainer = ({ selectedTaskIds, closeContainer }: BulkTasks
           />
         </Tooltip>
 
-        <Tooltip title={'Archive'}>
+        <Tooltip title={t('archive')}>
           <Button
             icon={<InboxOutlined />}
             className="borderless-icon-btn"
@@ -85,7 +87,7 @@ const BulkTasksActionContainer = ({ selectedTaskIds, closeContainer }: BulkTasks
           />
         </Tooltip>
 
-        <Tooltip title={'Delete'}>
+        <Tooltip title={t('delete')}>
           <Button
             icon={<DeleteOutlined />}
             className="borderless-icon-btn"
@@ -94,7 +96,7 @@ const BulkTasksActionContainer = ({ selectedTaskIds, closeContainer }: BulkTasks
         </Tooltip>
       </Flex>
 
-      <Tooltip title={'More options'}>
+      <Tooltip title={t('more-options')}>
         <Button
           icon={<MoreOutlined />}
           className="borderless-icon-btn"
@@ -102,7 +104,7 @@ const BulkTasksActionContainer = ({ selectedTaskIds, closeContainer }: BulkTasks
         />
       </Tooltip>
 
-      <Tooltip title={'Deselect all'}>
+      <Tooltip title={t('deselect-all')}>
         <Button
           icon={<CloseCircleOutlined />}
           onClick={closeContainer}

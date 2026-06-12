@@ -10,5 +10,12 @@
   "passwordRequired": "يرجى إدخال كلمة المرور الجديدة",
   "returnToLoginButton": "العودة إلى تسجيل الدخول",
   "confirmPasswordRequired": "يرجى تأكيد كلمة المرور الجديدة",
-  "passwordMismatch": "كلمتا المرور غير متطابقتين"
+  "passwordMismatch": "كلمتا المرور غير متطابقتين",
+  "passwordChecklist": {
+    "minLength": "8 أحرف على الأقل",
+    "uppercase": "حرف كبير واحد",
+    "lowercase": "حرف صغير واحد",
+    "number": "رقم واحد",
+    "special": "رمز خاص واحد"
+  }
 }

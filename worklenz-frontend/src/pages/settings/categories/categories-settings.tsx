@@ -92,7 +92,7 @@ const CategoriesSettings = () => {
             cancelText={t('deleteConfirmationCancel')}
             onConfirm={() => record.id && dispatch(deleteCategory(record.id))}
           >
-            <Tooltip title="Delete">
+            <Tooltip title={t('deleteTooltip')}>
               <Button shape="default" icon={<DeleteOutlined />} size="small" />
             </Tooltip>
           </Popconfirm>

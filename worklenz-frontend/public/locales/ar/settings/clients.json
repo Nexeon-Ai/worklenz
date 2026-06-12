@@ -18,5 +18,7 @@
   "createClientSuccessMessage": "تم إنشاء العميل بنجاح!",
   "createClientErrorMessage": "فشل إنشاء العميل!",
   "updateClientSuccessMessage": "تم تحديث العميل بنجاح!",
-  "updateClientErrorMessage": "فشل تحديث العميل!"
+  "updateClientErrorMessage": "فشل تحديث العميل!",
+  "editTooltip": "تعديل",
+  "deleteTooltip": "حذف"
 }

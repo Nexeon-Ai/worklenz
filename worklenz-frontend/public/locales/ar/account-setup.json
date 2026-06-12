@@ -1,5 +1,9 @@
 {
   "continue": "متابعة",
+  "switchToLightMode": "التبديل إلى الوضع الفاتح",
+  "switchToDarkMode": "التبديل إلى الوضع الداكن",
+  "orgNamePlaceholderCompany": "مثال: فريق {{name}}",
+  "orgNamePlaceholderPersonal": "مثال: فريق {{name}}",
 
   "setupYourAccount": "قم بإعداد حسابك.",
   "organizationStepTitle": "اختر اسماً لمؤسستك",

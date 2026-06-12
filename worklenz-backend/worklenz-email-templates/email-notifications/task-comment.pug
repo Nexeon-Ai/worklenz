@@ -1,13 +1,13 @@
 - const button_style = 'white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;width:100%;font-size: 15px;font-family:Helvetica,Arial,sans-serif;text-decoration:none;line-height: 32px;color:#fff'
-- const container_style = "margin : 0;padding : 0;background : #fff;text-align : left;font-size  : 15px;line-height: 1.4;font-family: 'Helvetica Neue', helvetica, 'Segoe UI', arial, sans-serif;font-weight: 400;"
+- const container_style = "margin : 0;padding : 0;background : #fff;text-align : right;font-size  : 15px;line-height: 1.4;font-family: 'Helvetica Neue', helvetica, 'Segoe UI', arial, sans-serif;font-weight: 400;"
 
 doctype html
-html(lang='en')
+html(lang='ar' dir='rtl')
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title Worklenz Daily Digest
+    title تعليق جديد على Worklenz
   body
     style.
       td {
@@ -67,7 +67,7 @@ html(lang='en')
                             tr
                               td(bgcolor='#3cb371' style='display:block;height:32px;padding:0 20px;text-align:center;background-color:#1890ff;border-radius:4px;color:#fff')
                                 a(style=button_style href=task_url target='_blank')
-                                  span(style='color:#fff') Reply to this
+                                  span(style='color:#fff') الرد على هذا
             tr
               td
                 table(width='100%')
@@ -78,5 +78,5 @@ html(lang='en')
                     tr
                       td(style='padding-top:10px;padding-bottom:10px')
                         p(style='color:#000;margin:0 0 19px;font-size:12px;line-height:15px;color:#6d6d6d;margin-bottom:0')
-                          | This email sending to you because you have enabled email notifications.&nbsp;
-                          a(style='color:inherit;text-decoration:underline;color:#1890ff;color:#6d6d6d' href=settings_url target='_blank') Stop sending it to me.
+                          | وصلتك هذه الرسالة لأنك فعّلت إشعارات البريد الإلكتروني.&nbsp;
+                          a(style='color:inherit;text-decoration:underline;color:#1890ff;color:#6d6d6d' href=settings_url target='_blank') إيقاف إرسالها إليّ.

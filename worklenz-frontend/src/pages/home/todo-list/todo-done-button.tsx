@@ -3,6 +3,7 @@ import ConfigProvider from 'antd/es/config-provider';
 import Button from 'antd/es/button';
 import Tooltip from 'antd/es/tooltip';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { colors } from '@/styles/colors';
 import { IMyTask } from '@/types/home/my-tasks.types';
@@ -12,6 +13,7 @@ type TodoDoneButtonProps = {
 };
 
 const TodoDoneButton = ({ record }: TodoDoneButtonProps) => {
+  const { t } = useTranslation('home');
   const [checkIconColor, setCheckIconColor] = useState<string>(colors.lightGray);
 
   const handleCompleteTodo = () => {
@@ -24,7 +26,7 @@ const TodoDoneButton = ({ record }: TodoDoneButtonProps) => {
 
   return (
     <ConfigProvider wave={{ disabled: true }}>
-      <Tooltip title={'Mark as done'}>
+      <Tooltip title={t('todoList.markAsDone')}>
         <Button
           type="text"
           className="borderless-icon-btn"

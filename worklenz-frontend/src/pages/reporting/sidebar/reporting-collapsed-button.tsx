@@ -65,7 +65,7 @@ const ReportingCollapsedButton = ({
             />
 
             <Typography.Text strong>
-              {loading ? 'Loading...' : organization?.name || 'Unknown Organization'}
+              {loading ? t('loadingText') : organization?.name || t('unknownOrganizationText')}
             </Typography.Text>
           </Flex>
         </Tooltip>

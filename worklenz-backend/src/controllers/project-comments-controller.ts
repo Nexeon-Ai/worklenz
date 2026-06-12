@@ -47,7 +47,7 @@ export default class ProjectCommentsController extends WorklenzControllerBase {
     const subject = config.message.replace(HTML_TAG_REGEXP, "");
 
     const data: IProjectCommentEmailNotification = {
-      greeting: `Hi ${config.receiverName}`,
+      greeting: `مرحباً ${config.receiverName}`,
       summary: subject,
       team: config.teamName,
       project_name: config.projectName,
@@ -84,7 +84,7 @@ export default class ProjectCommentsController extends WorklenzControllerBase {
 
       const projectMembers = await this.getMembersList(projectId);
 
-      const commentMessage = `<b>${req.user?.name}</b> added a comment on <b>${data.comment.project_name}</b> (${data.comment.team_name})`;
+      const commentMessage = `<b>${req.user?.name}</b> أضاف تعليقاً على <b>${data.comment.project_name}</b> (${data.comment.team_name})`;
 
       for (const member of projectMembers || []) {
         if (member.id && member.id === req.user?.id) continue;
@@ -101,7 +101,7 @@ export default class ProjectCommentsController extends WorklenzControllerBase {
         }
       }
 
-      const mentionMessage = `<b>${req.user?.name}</b> has mentioned you in a comment on <b>${data.comment.project_name}</b> (${data.comment.team_name})`;
+      const mentionMessage = `<b>${req.user?.name}</b> أشار إليك في تعليق على <b>${data.comment.project_name}</b> (${data.comment.team_name})`;
       const rdMentions = [...new Set(req.body.mentions || [])] as IMention[]; // remove duplicates
 
       for (const mention of rdMentions) {

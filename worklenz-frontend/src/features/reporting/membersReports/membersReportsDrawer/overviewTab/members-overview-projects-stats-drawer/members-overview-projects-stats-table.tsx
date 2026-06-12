@@ -125,7 +125,7 @@ const MembersOverviewProjectsStatsTable = ({ projectList, loading }: ProjectRepo
     },
     {
       key: 'category',
-      title: <CustomTableTitle title="Category" />,
+      title: <CustomTableTitle title={t('categoryColumn')} />,
       render: record => (
         <Flex
           gap={6}

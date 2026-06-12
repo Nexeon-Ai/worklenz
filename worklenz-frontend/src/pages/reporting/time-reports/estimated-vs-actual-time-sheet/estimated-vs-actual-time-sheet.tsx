@@ -11,6 +11,7 @@ import {
   ChartData,
 } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { useTranslation } from 'react-i18next';
 import { IRPTTimeProject } from '@/types/reporting/reporting.types';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import logger from '@/utils/errorLogger';
@@ -50,6 +51,7 @@ const EstimatedVsActualTimeSheet = forwardRef<
   EstimatedVsActualTimeSheetRef,
   IEstimatedVsActualTimeSheetProps
 >(({ type }, ref) => {
+  const { t } = useTranslation('time-report');
   const chartRef = useRef<any>(null);
 
   // State for filters and data
@@ -108,13 +110,13 @@ const EstimatedVsActualTimeSheet = forwardRef<
     labels,
     datasets: [
       {
-        label: 'Estimated Days',
+        label: t('estimatedDays'),
         data: estimatedDays,
         backgroundColor: jsonData.map((_, index) => getProjectColor(index) + '80'), // 80 for opacity
         barThickness: 50,
       },
       {
-        label: 'Actual Days',
+        label: t('actualDays'),
         data: actualDays,
         backgroundColor: jsonData.map((_, index) => getProjectColor(index)),
         barThickness: 50,
@@ -133,7 +135,7 @@ const EstimatedVsActualTimeSheet = forwardRef<
               const project = jsonData[items[0].dataIndex];
               if (project.end_date) {
                 const endDate = new Date(project.end_date);
-                return 'Ends On: ' + formatDate(endDate);
+                return t('endsOn') + ': ' + formatDate(endDate);
               }
             }
             return '';
@@ -158,7 +160,7 @@ const EstimatedVsActualTimeSheet = forwardRef<
         type: 'category' as const,
         title: {
           display: true,
-          text: 'Project',
+          text: t('project'),
           align: 'end' as const,
           font: {
             family: 'Helvetica',
@@ -177,7 +179,7 @@ const EstimatedVsActualTimeSheet = forwardRef<
         type: 'linear' as const,
         title: {
           display: true,
-          text: 'Days',
+          text: t('days'),
           align: 'end' as const,
           font: {
             family: 'Helvetica',

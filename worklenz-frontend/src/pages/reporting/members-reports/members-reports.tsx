@@ -53,7 +53,7 @@ const MembersReports = () => {
   return (
     <Flex vertical>
       <CustomPageHeader
-        title={`Members (${total})`}
+        title={`${t('membersTitle')} (${total})`}
         children={
           <Space>
             <Button>

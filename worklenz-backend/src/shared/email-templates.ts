@@ -15,7 +15,7 @@ export function sendWelcomeEmail(email: string, name: string) {
 
   sendEmail({
     to: [email],
-    subject: "Welcome to Worklenz.",
+    subject: "مرحباً بك في Worklenz.",
     html: content
   });
 }
@@ -27,7 +27,7 @@ export function sendNewSubscriberNotification(subscriberEmail: string) {
   content = content.replace("[VAR_EMAIL]", sanitize(subscriberEmail));
 
   sendEmail({
-    subject: "Worklenz - New Subscriber.",
+    subject: "Worklenz - مشترك جديد.",
     html: content
   });
 }
@@ -45,7 +45,7 @@ export function sendJoinTeamInvitation(myName: string, teamName: string, teamId:
 
   sendEmail({
     to: [toEmail],
-    subject: `${myName} has invited you to work with ${teamName} in Worklenz`,
+    subject: `${myName} دعاك للعمل ضمن ${teamName} على Worklenz`,
     html: content
   });
 }
@@ -64,7 +64,7 @@ export function sendRegisterAndJoinTeamInvitation(myName: string, userName: stri
 
   sendEmail({
     to: [toEmail],
-    subject: `${myName} has invited you to work with ${teamName} in Worklenz`,
+    subject: `${myName} دعاك للعمل ضمن ${teamName} على Worklenz`,
     html: content
   });
 }
@@ -79,7 +79,7 @@ export function sendResetEmail(toEmail: string, user_id: string, hash: string) {
 
   sendEmail({
     to: [toEmail],
-    subject: "Reset your password on Worklenz.",
+    subject: "إعادة تعيين كلمة المرور على Worklenz.",
     html: content
   });
 }
@@ -91,7 +91,7 @@ export function sendResetSuccessEmail(toEmail: string) {
 
   sendEmail({
     to: [toEmail],
-    subject: "Your password was reset.",
+    subject: "تمت إعادة تعيين كلمة المرور الخاصة بك.",
     html: content
   });
 }

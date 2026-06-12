@@ -130,7 +130,7 @@ const UpgradePlans = () => {
         setPaddleLoading(false);
         break;
       case 'Checkout.Complete':
-        message.success('Subscription updated successfully!');
+        message.success(t('subscriptionUpdateSuccess'));
         setPaddleLoading(true);
         setTimeout(() => {
           dispatch(fetchBillingInfo());
@@ -148,8 +148,8 @@ const UpgradePlans = () => {
       case 'Checkout.Error':
         setSwitchingToPaddlePlan(false);
         setPaddleLoading(false);
-        setPaddleError(data.error?.message || 'An error occurred during checkout');
-        message.error('Error during checkout: ' + (data.error?.message || 'Unknown error'));
+        setPaddleError(data.error?.message || t('checkoutErrorOccurred'));
+        message.error(t('checkoutError', { error: data.error?.message || t('unknownError') }));
         logger.error('Paddle checkout error', data.error);
         break;
       default:
@@ -179,8 +179,8 @@ const UpgradePlans = () => {
 
     script.onerror = () => {
       setPaddleLoading(false);
-      setPaddleError('Failed to load Paddle checkout');
-      message.error('Failed to load payment processor');
+      setPaddleError(t('failedToLoadCheckout'));
+      message.error(t('paymentProcessorError'));
       logger.error('Failed to load Paddle script');
     };
 
@@ -199,8 +199,8 @@ const UpgradePlans = () => {
       Paddle.Checkout.open(data.params);
     } catch (error) {
       setPaddleLoading(false);
-      setPaddleError('Failed to initialize checkout');
-      message.error('Failed to initialize checkout');
+      setPaddleError(t('failedToInitializeCheckout'));
+      message.error(t('failedToInitializeCheckout'));
       logger.error('Error initializing Paddle', error);
     }
   };
@@ -218,14 +218,14 @@ const UpgradePlans = () => {
         } else {
           setSwitchingToPaddlePlan(false);
           setPaddleLoading(false);
-          setPaddleError('Failed to prepare checkout');
-          message.error('Failed to prepare checkout');
+          setPaddleError(t('failedToPrepareCheckout'));
+          message.error(t('failedToPrepareCheckout'));
         }
       } else if (billingInfo?.status === SUBSCRIPTION_STATUS.ACTIVE) {
         // For existing subscriptions, use changePlan endpoint
         const res = await adminCenterApiService.changePlan(planId);
         if (res.done) {
-          message.success('Subscription plan changed successfully!');
+          message.success(t('subscriptionPlanChangedSuccess'));
           dispatch(fetchBillingInfo());
           dispatch(toggleUpgradeModal());
           setSwitchingToPaddlePlan(false);
@@ -233,22 +233,22 @@ const UpgradePlans = () => {
         } else {
           setSwitchingToPaddlePlan(false);
           setPaddleLoading(false);
-          setPaddleError('Failed to change plan');
-          message.error('Failed to change subscription plan');
+          setPaddleError(t('failedToChangePlan'));
+          message.error(t('failedToChangeSubscriptionPlan'));
         }
       }
     } catch (error) {
       setSwitchingToPaddlePlan(false);
       setPaddleLoading(false);
-      setPaddleError('Error upgrading to paid plan');
-      message.error('Failed to upgrade to paid plan');
+      setPaddleError(t('errorUpgradingPlan'));
+      message.error(t('failedToUpgradePlan'));
       logger.error('Error upgrading to paddle plan', error);
     }
   };
 
   const continueWithPaddlePlan = async () => {
     if (selectedPlan && selectedSeatCount.toString() === '100+') {
-      message.info('Please contact sales for custom pricing on large teams');
+      message.info(t('contactSalesLargeTeams'));
       return;
     }
 
@@ -267,13 +267,13 @@ const UpgradePlans = () => {
         upgradeToPaddlePlan(planId);
       } else {
         setSwitchingToPaddlePlan(false);
-        setPaddleError('Invalid plan selected');
-        message.error('Invalid plan selected');
+        setPaddleError(t('invalidPlanSelected'));
+        message.error(t('invalidPlanSelected'));
       }
     } catch (error) {
       setSwitchingToPaddlePlan(false);
-      setPaddleError('Error processing request');
-      message.error('Error processing request');
+      setPaddleError(t('errorProcessingRequest'));
+      message.error(t('errorProcessingRequest'));
       logger.error('Error upgrading to paddle plan', error);
     }
   };
@@ -418,15 +418,16 @@ const UpgradePlans = () => {
               <div style={cardStyles.priceContainer}>
                 <Flex justify="space-between" align="center">
                   <Typography.Title level={1}>$ {plans.annual_price}</Typography.Title>
-                  <Typography.Text>seat / month</Typography.Text>
+                  <Typography.Text>{t('seatPerMonth')}</Typography.Text>
                 </Flex>
                 <Flex justify="center" align="center">
                   <Typography.Text strong style={{ fontSize: '16px' }}>
-                    Total ${calculateAnnualTotal(plans.annual_price)}/ year
+                    {t('totalPerYear', { total: calculateAnnualTotal(plans.annual_price) })}
                     <Tooltip
-                      title={
-                        '$' + plans.annual_price + ' x 12 months x ' + selectedSeatCount + ' seats'
-                      }
+                      title={t('annualPriceTooltip', {
+                        price: plans.annual_price,
+                        seats: selectedSeatCount,
+                      })}
                     >
                       <InfoCircleOutlined
                         style={{ color: 'grey', fontSize: '16px', marginLeft: '4px' }}
@@ -460,13 +461,16 @@ const UpgradePlans = () => {
               <div style={cardStyles.priceContainer}>
                 <Flex justify="space-between" align="center">
                   <Typography.Title level={1}>$ {plans.monthly_price}</Typography.Title>
-                  <Typography.Text>seat / month</Typography.Text>
+                  <Typography.Text>{t('seatPerMonth')}</Typography.Text>
                 </Flex>
                 <Flex justify="center" align="center">
                   <Typography.Text strong style={{ fontSize: '16px' }}>
-                    Total ${calculateMonthlyTotal(plans.monthly_price)}/ month
+                    {t('totalPerMonth', { total: calculateMonthlyTotal(plans.monthly_price) })}
                     <Tooltip
-                      title={'$' + plans.monthly_price + ' x ' + selectedSeatCount + ' seats'}
+                      title={t('monthlyPriceTooltip', {
+                        price: plans.monthly_price,
+                        seats: selectedSeatCount,
+                      })}
                     >
                       <InfoCircleOutlined
                         style={{ color: 'grey', fontSize: '16px', marginLeft: '4px' }}
@@ -503,7 +507,7 @@ const UpgradePlans = () => {
             loading={switchingToFreePlan}
             onClick={switchToFreePlan}
           >
-            Try for free
+            {t('tryForFree')}
           </Button>
         )}
         {selectedPlan === paddlePlans.ANNUAL && (

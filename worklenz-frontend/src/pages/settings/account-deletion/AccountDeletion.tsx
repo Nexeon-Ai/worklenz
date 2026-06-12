@@ -36,7 +36,7 @@ const AccountDeletion: React.FC = () => {
     }
 
     if (!currentSession?.id) {
-      message.error('User session not found');
+      message.error(t('userSessionNotFound'));
       return;
     }
 

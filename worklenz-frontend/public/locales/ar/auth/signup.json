@@ -1,4 +1,5 @@
 {
+  "documentTitle": "إنشاء حساب",
   "headerDescription": "أنشئ حسابًا للبدء",
   "nameLabel": "الاسم الكامل",
   "namePlaceholder": "أدخل اسمك الكامل",
@@ -27,5 +28,15 @@
   "loginButton": "تسجيل الدخول",
   "orText": "أو",
   "reCAPTCHAVerificationError": "خطأ في التحقق من reCAPTCHA",
-  "reCAPTCHAVerificationErrorMessage": "تعذّر علينا التحقق من reCAPTCHA الخاص بك. يرجى المحاولة مرة أخرى."
+  "reCAPTCHAVerificationErrorMessage": "تعذّر علينا التحقق من reCAPTCHA الخاص بك. يرجى المحاولة مرة أخرى.",
+  "signupCheckErrorMessage": "فشل التحقق من بيانات إنشاء الحساب",
+  "signupErrorMessage": "فشل إنشاء الحساب",
+  "googleSignUpRedirectErrorMessage": "فشل التحويل إلى إنشاء حساب عبر Google",
+  "passwordChecklist": {
+    "minLength": "8 أحرف على الأقل",
+    "uppercase": "حرف كبير واحد",
+    "lowercase": "حرف صغير واحد",
+    "number": "رقم واحد",
+    "special": "رمز خاص واحد"
+  }
 }

@@ -25,8 +25,10 @@ async function onDailyDigestJobTick() {
     let sentCount = 0;
 
     for (const digest of dataset) {
-      digest.greeting = `Hi ${digest.name},`;
-      digest.note = `Here's your ${moment().format("dddd")} update!`;
+      digest.greeting = `مرحباً ${digest.name}،`;
+      // Intl avoids loading moment's ar locale, which would globally switch
+      // moment to Arabic-Indic digits and corrupt formatted date strings.
+      digest.note = `إليك مستجدات يوم ${new Date().toLocaleDateString("ar", { weekday: "long" })}!`;
       digest.base_url = `${getBaseUrl()}/worklenz`;
       digest.settings_url = `${getBaseUrl()}/worklenz/settings/notifications`;
 

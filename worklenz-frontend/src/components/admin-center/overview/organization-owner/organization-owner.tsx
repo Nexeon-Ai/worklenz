@@ -73,7 +73,7 @@ const OrganizationOwner = ({ themeMode, organization, t, refetch }: Organization
           }}
         >
           <span style={{ marginRight: '8px' }}>
-            <Tooltip title="Email Address">
+            <Tooltip title={t('emailAddress')}>
               <MailOutlined />
             </Tooltip>
           </span>
@@ -81,7 +81,7 @@ const OrganizationOwner = ({ themeMode, organization, t, refetch }: Organization
         </Typography.Text>
       </Typography.Paragraph>
       <Typography.Paragraph style={{ marginTop: '0.5rem', marginBottom: 0 }}>
-        <Tooltip title="Contact Number">
+        <Tooltip title={t('contactNumberTooltip')}>
           <span style={{ marginRight: '8px' }}>
             <PhoneOutlined />
           </span>
@@ -102,7 +102,7 @@ const OrganizationOwner = ({ themeMode, organization, t, refetch }: Organization
         ) : (
           <Typography.Text>
             {number}
-            <Tooltip title="Edit">
+            <Tooltip title={t('edit')}>
               <Button
                 onClick={handleEditContactNumber}
                 size="small"

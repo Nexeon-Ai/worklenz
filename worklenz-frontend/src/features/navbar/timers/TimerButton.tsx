@@ -190,7 +190,7 @@ const TimerButton = () => {
       if (error) {
         return (
           <div style={{ padding: 16, textAlign: 'center', width: 350 }}>
-            <Text type="danger">Error loading timers</Text>
+            <Text type="danger">{t('timers-error-loading')}</Text>
           </div>
         );
       }
@@ -209,7 +209,7 @@ const TimerButton = () => {
         >
           {!Array.isArray(runningTimers) || runningTimers.length === 0 ? (
             <div style={{ padding: 16, textAlign: 'center' }}>
-              <Text type="secondary">No running timers</Text>
+              <Text type="secondary">{t('timers-none-running')}</Text>
             </div>
           ) : (
             <List
@@ -228,7 +228,7 @@ const TimerButton = () => {
                     <div style={{ width: '100%' }}>
                       <Space direction="vertical" size={4} style={{ width: '100%' }}>
                         <Text strong style={{ fontSize: 14, color: token.colorText }}>
-                          {timer.task_name || 'Unnamed Task'}
+                          {timer.task_name || t('timers-unnamed-task')}
                         </Text>
                         <div
                           style={{
@@ -242,11 +242,11 @@ const TimerButton = () => {
                             marginTop: 2,
                           }}
                         >
-                          {timer.project_name || 'Unnamed Project'}
+                          {timer.project_name || t('timers-unnamed-project')}
                         </div>
                         {timer.parent_task_name && (
                           <Text type="secondary" style={{ fontSize: 11 }}>
-                            Parent: {timer.parent_task_name}
+                            {t('timers-parent', { name: timer.parent_task_name })}
                           </Text>
                         )}
                         <div
@@ -266,7 +266,7 @@ const TimerButton = () => {
                               }}
                             >
                               <Text type="secondary" style={{ fontSize: 11 }}>
-                                Started:{' '}
+                                {t('timers-started')}{' '}
                                 {timer.start_time
                                   ? format(parseISO(timer.start_time), 'HH:mm')
                                   : '--:--'}
@@ -297,7 +297,7 @@ const TimerButton = () => {
                               fontWeight: 500,
                             }}
                           >
-                            Stop
+                            {t('timers-stop')}
                           </Button>
                         </div>
                       </Space>
@@ -320,7 +320,7 @@ const TimerButton = () => {
                 }}
               >
                 <Text type="secondary" style={{ fontSize: 11 }}>
-                  {timerCount()} timer{timerCount() !== 1 ? 's' : ''} running
+                  {t('timers-running-count', { count: timerCount() })}
                 </Text>
               </div>
             </>
@@ -331,7 +331,7 @@ const TimerButton = () => {
       logError('Error rendering dropdown content', error);
       return (
         <div style={{ padding: 16, textAlign: 'center', width: 350 }}>
-          <Text type="danger">Error rendering timers</Text>
+          <Text type="danger">{t('timers-error-rendering')}</Text>
         </div>
       );
     }
@@ -357,7 +357,7 @@ const TimerButton = () => {
         open={dropdownOpen}
         onOpenChange={handleDropdownOpenChange}
       >
-        <Tooltip title="Running Timers">
+        <Tooltip title={t('timers-tooltip')}>
           <Button
             style={{ height: '62px', width: '60px' }}
             type="text"
@@ -378,7 +378,7 @@ const TimerButton = () => {
   } catch (error) {
     logError('Error rendering TimerButton', error);
     return (
-      <Tooltip title="Timer Error">
+      <Tooltip title={t('timers-error-tooltip')}>
         <Button
           style={{ height: '62px', width: '60px' }}
           type="text"

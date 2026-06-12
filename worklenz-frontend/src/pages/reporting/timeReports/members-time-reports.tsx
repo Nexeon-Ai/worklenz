@@ -23,7 +23,7 @@ const MembersTimeReports = () => {
   return (
     <Flex vertical>
       <TimeReportingRightHeader
-        title={t('Members Time Sheet')}
+        title={t('membersTimeSheet')}
         exportType={[{ key: 'png', label: 'PNG' }]}
         export={handleExport}
       />

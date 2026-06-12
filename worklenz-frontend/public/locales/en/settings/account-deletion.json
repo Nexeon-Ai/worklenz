@@ -25,5 +25,6 @@
   "deletionConfirmationMessage": "Your account deletion request has been received. Your account and all associated data will be permanently deleted within 30 days. You will now be logged out.",
   "deletionRequestFailed": "Failed to submit deletion request. Please try again.",
   "dataRetentionNotice": "Data Retention Notice",
-  "dataRetentionDescription": "As per our data retention policy, your account and all associated data will be permanently deleted within 30 days. This process cannot be reversed once initiated."
+  "dataRetentionDescription": "As per our data retention policy, your account and all associated data will be permanently deleted within 30 days. This process cannot be reversed once initiated.",
+  "userSessionNotFound": "User session not found"
 }

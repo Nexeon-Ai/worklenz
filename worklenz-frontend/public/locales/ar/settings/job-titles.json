@@ -16,5 +16,7 @@
   "createJobTitleSuccessMessage": "تم إنشاء المسمى الوظيفي بنجاح!",
   "createJobTitleErrorMessage": "فشل إنشاء المسمى الوظيفي!",
   "updateJobTitleSuccessMessage": "تم تحديث المسمى الوظيفي بنجاح!",
-  "updateJobTitleErrorMessage": "فشل تحديث المسمى الوظيفي!"
+  "updateJobTitleErrorMessage": "فشل تحديث المسمى الوظيفي!",
+  "editTooltip": "تعديل",
+  "deleteTooltip": "حذف"
 }

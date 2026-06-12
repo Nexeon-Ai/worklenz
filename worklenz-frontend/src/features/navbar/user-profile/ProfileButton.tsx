@@ -45,7 +45,7 @@ const ProfileButton = ({ isOwnerOrAdmin }: ProfileButtonProps) => {
           className={`profile-card ${themeMode === 'dark' ? 'dark' : ''}`}
           title={
             <div style={{ paddingBlock: '16px' }}>
-              <Typography.Text>Account</Typography.Text>
+              <Typography.Text>{t('account')}</Typography.Text>
               <Flex gap={8} align="center" justify="flex-start" style={{ width: '100%' }}>
                 <SingleAvatar
                   avatarUrl={currentSession?.avatar_url}

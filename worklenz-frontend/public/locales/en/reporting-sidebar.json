@@ -4,5 +4,7 @@
   "members": "Members",
   "timeReports": "Time Reports",
   "estimateVsActual": "Estimate Vs Actual",
-  "currentOrganizationTooltip": "Current organization"
+  "currentOrganizationTooltip": "Current organization",
+  "loadingText": "Loading...",
+  "unknownOrganizationText": "Unknown Organization"
 }

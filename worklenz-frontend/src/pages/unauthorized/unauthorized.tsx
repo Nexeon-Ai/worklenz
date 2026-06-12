@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const Unauthorized = () => {
   const navigate = useNavigate();
   const { t } = useTranslation('unauthorized');
-  useDocumentTitle('Unauthorized');
+  useDocumentTitle(t('documentTitle', { defaultValue: 'Unauthorized' }));
 
   return (
     <div style={{ marginBlock: 65, minHeight: '90vh' }}>

@@ -29,11 +29,11 @@ const ForgotPasswordPage = () => {
 
   const navigate = useNavigate();
   const { trackMixpanelEvent } = useMixpanelTracking();
-  useDocumentTitle('Forgot Password');
   const dispatch = useAppDispatch();
 
   // Localization
   const { t } = useTranslation('auth/forgot-password');
+  useDocumentTitle(t('documentTitle', { defaultValue: 'Forgot Password' }));
 
   // media queries from react-responsive package
   const isMobile = useMediaQuery({ query: '(max-width: 576px)' });

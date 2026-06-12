@@ -1,0 +1,14 @@
+{
+  "tasks-selected_zero": "لم يتم تحديد مهام",
+  "tasks-selected_one": "تم تحديد مهمة واحدة",
+  "tasks-selected_two": "تم تحديد مهمتين",
+  "tasks-selected_few": "تم تحديد {{count}} مهام",
+  "tasks-selected_many": "تم تحديد {{count}} مهمة",
+  "tasks-selected_other": "تم تحديد {{count}} مهمة",
+  "change-status-priority-phases": "تغيير الحالة/ الأولوية/ المراحل",
+  "change-label": "تغيير التسمية",
+  "assign-to-me": "إسناد إليّ",
+  "assign-members": "إسناد الأعضاء",
+  "more-options": "خيارات إضافية",
+  "deselect-all": "إلغاء تحديد الكل"
+}

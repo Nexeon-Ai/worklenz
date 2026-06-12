@@ -134,7 +134,7 @@ const TasksList: React.FC = React.memo(() => {
               </Typography.Text>
             </Tooltip>
             <div className="row-action-button">
-              <Tooltip title={'Click open task form'}>
+              <Tooltip title={t('tasks.clickOpenTaskForm')}>
                 <Button
                   type="text"
                   icon={<ExpandAltOutlined />}
@@ -147,7 +147,7 @@ const TasksList: React.FC = React.memo(() => {
                     height: 'fit-content',
                   }}
                 >
-                  Open
+                  {t('tasks.open')}
                 </Button>
               </Tooltip>
             </div>
@@ -273,7 +273,7 @@ const TasksList: React.FC = React.memo(() => {
       ) : data?.body.total === 0 ? (
         <EmptyListPlaceholder
           imageSrc="https://s3.us-west-2.amazonaws.com/worklenz.com/assets/empty-box.webp"
-          text=" No tasks to show."
+          text={t('tasks.noTasks')}
         />
       ) : (
         <>

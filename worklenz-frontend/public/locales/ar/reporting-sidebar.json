@@ -4,5 +4,7 @@
   "members": "الأعضاء",
   "timeReports": "تقارير الوقت",
   "estimateVsActual": "المقدّر مقابل الفعلي",
-  "currentOrganizationTooltip": "المؤسسة الحالية"
+  "currentOrganizationTooltip": "المؤسسة الحالية",
+  "loadingText": "جارٍ التحميل...",
+  "unknownOrganizationText": "مؤسسة غير معروفة"
 }

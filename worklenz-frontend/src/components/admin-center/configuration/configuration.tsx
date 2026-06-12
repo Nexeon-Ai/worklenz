@@ -1,5 +1,6 @@
 import { Button, Card, Col, Divider, Form, Input, Row, Select } from '@/shared/antd-imports';
 import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { RootState } from '../../../app/store';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import { IBillingConfigurationCountry } from '@/types/admin-center/country.types';
@@ -8,6 +9,7 @@ import { IBillingConfiguration } from '@/types/admin-center/admin-center.types';
 import logger from '@/utils/errorLogger';
 
 const Configuration: React.FC = React.memo(() => {
+  const { t } = useTranslation('admin-center/configuration');
   const themeMode = useAppSelector((state: RootState) => state.themeReducer.mode);
 
   const [countries, setCountries] = useState<IBillingConfigurationCountry[]>([]);
@@ -99,13 +101,13 @@ const Configuration: React.FC = React.memo(() => {
 
   return (
     <div>
-      <Card title={<span style={titleStyle}>Billing Details</span>} style={cardStyle}>
+      <Card title={<span style={titleStyle}>{t('billingDetails')}</span>} style={cardStyle}>
         <Form form={form} initialValues={configuration} onFinish={handleSave}>
           <Row gutter={[0, 0]}>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
               <Form.Item
                 name="name"
-                label="Name"
+                label={t('name')}
                 layout="vertical"
                 rules={[
                   {
@@ -113,13 +115,13 @@ const Configuration: React.FC = React.memo(() => {
                   },
                 ]}
               >
-                <Input placeholder="Name" disabled />
+                <Input placeholder={t('namePlaceholder')} disabled />
               </Form.Item>
             </Col>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
               <Form.Item
                 name="email"
-                label="Email Address"
+                label={t('emailAddress')}
                 layout="vertical"
                 rules={[
                   {
@@ -127,55 +129,55 @@ const Configuration: React.FC = React.memo(() => {
                   },
                 ]}
               >
-                <Input placeholder="Email Address" disabled />
+                <Input placeholder={t('emailPlaceholder')} disabled />
               </Form.Item>
             </Col>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
               <Form.Item
                 name="phone"
-                label="Contact Number"
+                label={t('contactNumber')}
                 layout="vertical"
                 rules={[
                   {
                     pattern: /^\d{10}$/,
-                    message: 'Phone number must be exactly 10 digits',
+                    message: t('phoneValidationError'),
                   },
                 ]}
               >
-                <Input placeholder="Phone Number" maxLength={10} onInput={handlePhoneInput} />
+                <Input placeholder={t('phoneNumberPlaceholder')} maxLength={10} onInput={handlePhoneInput} />
               </Form.Item>
             </Col>
           </Row>
 
           <Divider orientation="left" style={{ ...dividerStyle, fontSize: '14px' }}>
-            <span style={dividerTitleStyle}>Company Details</span>
+            <span style={dividerTitleStyle}>{t('companyDetails')}</span>
           </Divider>
 
           <Row gutter={[0, 0]}>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
-              <Form.Item name="company_name" label="Company Name" layout="vertical">
-                <Input placeholder="Company Name" />
+              <Form.Item name="company_name" label={t('companyName')} layout="vertical">
+                <Input placeholder={t('companyNamePlaceholder')} />
               </Form.Item>
             </Col>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
-              <Form.Item name="address_line_1" label="Address Line 01" layout="vertical">
-                <Input placeholder="Address Line 01" />
+              <Form.Item name="address_line_1" label={t('addressLine01')} layout="vertical">
+                <Input placeholder={t('addressLine01Placeholder')} />
               </Form.Item>
             </Col>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
-              <Form.Item name="address_line_2" label="Address Line 02" layout="vertical">
-                <Input placeholder="Address Line 02" />
+              <Form.Item name="address_line_2" label={t('addressLine02')} layout="vertical">
+                <Input placeholder={t('addressLine02Placeholder')} />
               </Form.Item>
             </Col>
           </Row>
           <Row gutter={[0, 0]}>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
-              <Form.Item name="country" label="Country" layout="vertical">
+              <Form.Item name="country" label={t('country')} layout="vertical">
                 <Select
                   dropdownStyle={{ maxHeight: 256, overflow: 'auto' }}
                   placement="topLeft"
                   showSearch
-                  placeholder="Country"
+                  placeholder={t('countryPlaceholder')}
                   optionFilterProp="label"
                   allowClear
                   options={countryOptions}
@@ -183,20 +185,20 @@ const Configuration: React.FC = React.memo(() => {
               </Form.Item>
             </Col>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
-              <Form.Item name="city" label="City" layout="vertical">
-                <Input placeholder="City" />
+              <Form.Item name="city" label={t('city')} layout="vertical">
+                <Input placeholder={t('cityPlaceholder')} />
               </Form.Item>
             </Col>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
-              <Form.Item name="state" label="State" layout="vertical">
-                <Input placeholder="State" />
+              <Form.Item name="state" label={t('state')} layout="vertical">
+                <Input placeholder={t('statePlaceholder')} />
               </Form.Item>
             </Col>
           </Row>
           <Row gutter={[0, 0]}>
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={colStyle}>
-              <Form.Item name="postal_code" label="Postal Code" layout="vertical">
-                <Input placeholder="Postal Code" />
+              <Form.Item name="postal_code" label={t('postalCode')} layout="vertical">
+                <Input placeholder={t('postalCodePlaceholder')} />
               </Form.Item>
             </Col>
           </Row>
@@ -204,7 +206,7 @@ const Configuration: React.FC = React.memo(() => {
             <Col xs={24} sm={24} md={8} lg={8} xl={8} style={{ ...buttonColStyle, marginTop: 8 }}>
               <Form.Item>
                 <Button type="primary" htmlType="submit" loading={loading} block>
-                  Save
+                  {t('save')}
                 </Button>
               </Form.Item>
             </Col>

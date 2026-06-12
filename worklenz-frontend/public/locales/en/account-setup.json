@@ -1,5 +1,9 @@
 {
   "continue": "Continue",
+  "switchToLightMode": "Switch to light mode",
+  "switchToDarkMode": "Switch to dark mode",
+  "orgNamePlaceholderCompany": "e.g. {{name}} Team",
+  "orgNamePlaceholderPersonal": "e.g. {{name}}'s Team",
 
   "setupYourAccount": "Setup Your Account.",
   "organizationStepTitle": "Name Your Organization",

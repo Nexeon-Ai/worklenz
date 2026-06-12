@@ -28,5 +28,18 @@
     "accept": "Accept",
     "acceptAndJoin": "Accept & Join",
     "noNotifications": "No notifications"
-  }
+  },
+  "timers-error-loading": "Error loading timers",
+  "timers-none-running": "No running timers",
+  "timers-unnamed-task": "Unnamed Task",
+  "timers-unnamed-project": "Unnamed Project",
+  "timers-parent": "Parent: {{name}}",
+  "timers-started": "Started:",
+  "timers-stop": "Stop",
+  "timers-running-count_one": "{{count}} timer running",
+  "timers-running-count_other": "{{count}} timers running",
+  "timers-tooltip": "Running Timers",
+  "timers-error-tooltip": "Timer Error",
+  "account": "Account",
+  "timers-error-rendering": "Error rendering timers"
 }

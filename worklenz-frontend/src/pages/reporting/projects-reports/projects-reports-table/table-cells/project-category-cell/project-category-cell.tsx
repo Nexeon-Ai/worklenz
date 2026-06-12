@@ -115,7 +115,7 @@ const ProjectCategoryCell = ({ id, name, color_code, projectId }: ProjectCategor
             />
             {filteredCategoriesData.length === 0 && (
               <Typography.Text style={{ color: colors.lightGray }}>
-                Hit enter to create!
+                {t('hitEnterToCreate')}
               </Typography.Text>
             )}
           </Flex>

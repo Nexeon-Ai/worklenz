@@ -19,12 +19,12 @@ mixin dataBlock(tasks, emptyMessage)
                 span(style='color:#6d6e6f')=emptyMessage
 
 doctype html
-html(lang='en')
+html(lang='ar' dir='rtl')
   head
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title Worklenz Project Daily Digest
+    title الملخص اليومي للمشروع من Worklenz
   body
     style.
       td {
@@ -36,7 +36,7 @@ html(lang='en')
         border-collapse: collapse;
         border-spacing: 0;
       }
-    div(style="margin : 0;padding : 0;background : #fff;text-align : left;font-size  : 15px;line-height: 1.4;font-family: 'Helvetica Neue', helvetica, 'Segoe UI', arial, sans-serif;font-weight: 400;")
+    div(style="margin : 0;padding : 0;background : #fff;text-align : right;font-size  : 15px;line-height: 1.4;font-family: 'Helvetica Neue', helvetica, 'Segoe UI', arial, sans-serif;font-weight: 400;")
       div(style='padding:15px 25px')
         table(style='width: 100%;max-width: 40em;')
           tbody
@@ -65,22 +65,22 @@ html(lang='en')
                               td
                                 h3(style='display: flex;margin-top: 30px;margin-bottom: 0;font-size: 1.1em;padding-bottom: 6px;border-bottom: 1px solid #d8d8d8;color: #2b2b2b;font-weight: 500;')
                                   img(src='https://worklenz.s3.amazonaws.com/assets/clock.png' style='width: 16px;height: 16px;margin-right: 10px;margin-top: 4px;')
-                                  | Today New
-                            +dataBlock(today_new, "No new tasks today")
+                                  | مهام اليوم الجديدة
+                            +dataBlock(today_new, "لا توجد مهام جديدة اليوم")
                           tbody
                             tr
                               td
                                 h3(style='display: flex;margin-top: 30px;margin-bottom: 0;font-size: 1.1em;padding-bottom: 6px;border-bottom: 1px solid #d8d8d8;color: #2b2b2b;font-weight: 500;')
                                   img(src='https://worklenz.s3.amazonaws.com/assets/clock-warn-icon.png' style='width: 16px;height: 16px;margin-right: 10px;margin-top: 4px;')
-                                  | Due Tomorrow
-                            +dataBlock(due_tomorrow, "No due tasks tomorrow")
+                                  | مهام تستحق غداً
+                            +dataBlock(due_tomorrow, "لا توجد مهام تستحق غداً")
                           tbody
                             tr
                               td
                                 h3(style='display: flex;margin-top: 30px;margin-bottom: 0;font-size: 1.1em;padding-bottom: 6px;border-bottom: 1px solid #d8d8d8;color: #2b2b2b;font-weight: 500;')
                                   img(src='https://worklenz.s3.amazonaws.com/assets/check-icon.png' style='width: 16px;height: 16px;margin-right: 10px;margin-top: 4px;')
-                                  | Today Completed
-                            +dataBlock(today_completed, "No completed tasks today")
+                                  | مهام اكتملت اليوم
+                            +dataBlock(today_completed, "لا توجد مهام مكتملة اليوم")
                     tr
                       td(style='padding-top:20px')
                         table
@@ -88,7 +88,7 @@ html(lang='en')
                             tr
                               td(bgcolor='#3cb371' style='display:block;height:32px;padding:0 20px;text-align:center;background-color:#1890ff;border-radius:4px;color:#fff')
                                 a(style='color:inherit;color:#1890ff;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;width:100%;font-size: 15px;font-family:Helvetica,Arial,sans-serif;text-decoration:none;line-height: 32px;color:#fff' href=project_url target='_blank')
-                                  span(style='color:#fff') Go to Project
+                                  span(style='color:#fff') الانتقال إلى المشروع
             tr
               td
                 table(width='100%')
@@ -99,8 +99,8 @@ html(lang='en')
                     tr
                       td(style='padding-top:5px;padding-bottom:0px')
                         p(style='color:#000;margin:0 0 19px;font-size:12px;line-height:15px;color:#6d6d6d;margin-bottom:0')
-                          | To stop sending this email, you can goto project and click "Stop Summary".&nbsp;
-                          a(style='color:inherit;text-decoration:underline;color:#1890ff;color:#6d6d6d' href=project_url target='_blank') Stop sending it to me.
+                          | لإيقاف إرسال هذا البريد، يمكنك الانتقال إلى المشروع والنقر على "إيقاف الملخص".&nbsp;
+                          a(style='color:inherit;text-decoration:underline;color:#1890ff;color:#6d6d6d' href=project_url target='_blank') إيقاف إرساله إليّ.
 
                     tr
                       td(style='padding-bottom:10px;padding-top:10px')
@@ -108,4 +108,4 @@ html(lang='en')
                     tr
                       td(style='padding-top:10px;padding-bottom:10px')
                         p(style='color:#000;margin:0 0 19px;font-size:12px;line-height:15px;color:#6d6d6d;margin-bottom:0')
-                          a(style='color:inherit;text-decoration:underline;color:#1890ff;color:#6d6d6d' href=settings_url target='_blank') Unsubscribe
+                          a(style='color:inherit;text-decoration:underline;color:#1890ff;color:#6d6d6d' href=settings_url target='_blank') إلغاء الاشتراك
