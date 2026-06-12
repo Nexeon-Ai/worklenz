@@ -1,0 +1,39 @@
+{
+  "noTasksInGroup": "لا توجد مهام في هذه المجموعة",
+  "noTasksInGroupDescription": "أضف مهمة للبدء",
+  "addFirstTask": "أضف مهمتك الأولى",
+  "openTask": "فتح",
+  "subtask": "مهمة فرعية",
+  "subtasks": "مهام فرعية",
+  "comment": "تعليق",
+  "comments": "تعليقات",
+  "attachment": "مرفق",
+  "attachments": "مرفقات",
+  "enterSubtaskName": "أدخل اسم المهمة الفرعية...",
+  "add": "إضافة",
+  "cancel": "إلغاء",
+  "renameGroup": "إعادة تسمية المجموعة",
+  "renameStatus": "إعادة تسمية الحالة",
+  "renamePhase": "إعادة تسمية المرحلة",
+  "changeCategory": "تغيير الفئة",
+  "clickToEditGroupName": "انقر لتعديل اسم المجموعة",
+  "enterGroupName": "أدخل اسم المجموعة",
+  "todo": "للتنفيذ",
+  "inProgress": "قيد التنفيذ",
+  "done": "منجز",
+  "defaultTaskName": "مهمة بلا عنوان",
+
+  "indicators": {
+    "tooltips": {
+      "subtasks": "{{count}} مهمة فرعية",
+      "subtasks_plural": "{{count}} مهام فرعية",
+      "comments": "{{count}} تعليق",
+      "comments_plural": "{{count}} تعليقات",
+      "attachments": "{{count}} مرفق",
+      "attachments_plural": "{{count}} مرفقات",
+      "subscribers": "المهمة لديها مشتركون",
+      "dependencies": "المهمة لديها تبعيات",
+      "recurring": "مهمة متكررة"
+    }
+  }
+}

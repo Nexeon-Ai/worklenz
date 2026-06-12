@@ -1,0 +1,14 @@
+{
+  "nameColumn": "الاسم",
+  "attachedTaskColumn": "المهمة المرفقة",
+  "sizeColumn": "الحجم",
+  "uploadedByColumn": "تم الرفع بواسطة",
+  "uploadedAtColumn": "تاريخ الرفع",
+  "fileIconAlt": "أيقونة الملف",
+  "titleDescriptionText": "ستظهر هنا جميع المرفقات الخاصة بمهام هذا المشروع.",
+  "deleteConfirmationTitle": "هل أنت متأكد؟",
+  "deleteConfirmationOk": "نعم",
+  "deleteConfirmationCancel": "إلغاء",
+  "segmentedTooltip": "قريبًا! التبديل بين عرض القائمة وعرض الصور المصغرة.",
+  "emptyText": "لا توجد مرفقات في المشروع."
+}

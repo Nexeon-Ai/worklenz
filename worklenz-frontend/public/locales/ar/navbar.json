@@ -1,0 +1,32 @@
+{
+  "logoAlt": "شعار Worklenz",
+  "home": "الرئيسية",
+  "projects": "المشاريع",
+  "schedule": "الجدول الزمني",
+  "reporting": "التقارير",
+  "clients": "العملاء",
+  "teams": "الفرق",
+  "labels": "التصنيفات",
+  "jobTitles": "المسميات الوظيفية",
+  "upgradePlan": "ترقية الخطة",
+  "upgradePlanTooltip": "ترقية الخطة",
+  "invite": "دعوة",
+  "inviteTooltip": "دعوة أعضاء الفريق للانضمام",
+  "switchTeamTooltip": "تبديل الفريق",
+  "help": "مساعدة",
+  "notificationTooltip": "عرض الإشعارات",
+  "profileTooltip": "عرض الملف الشخصي",
+  "adminCenter": "مركز الإدارة",
+  "settings": "الإعدادات",
+  "deleteAccount": "حذف الحساب",
+  "logOut": "تسجيل الخروج",
+  "notificationsDrawer": {
+    "read": "الإشعارات المقروءة",
+    "unread": "الإشعارات غير المقروءة",
+    "markAsRead": "وضع علامة كمقروء",
+    "readAndJoin": "قراءة وانضمام",
+    "accept": "قبول",
+    "acceptAndJoin": "قبول وانضمام",
+    "noNotifications": "لا توجد إشعارات"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "nameColumn": "الاسم",
+  "projectColumn": "المشروع",
+  "noProjectsAvailable": "لا توجد مشاريع متاحة",
+  "deleteConfirmationTitle": "هل أنت متأكد؟",
+  "deleteConfirmationOk": "نعم",
+  "deleteConfirmationCancel": "إلغاء",
+  "searchPlaceholder": "البحث بالاسم",
+  "createClient": "إنشاء عميل",
+  "pinTooltip": "انقر لتثبيت هذا في القائمة الرئيسية",
+  "createClientDrawerTitle": "إنشاء عميل",
+  "updateClientDrawerTitle": "تحديث العميل",
+  "nameLabel": "الاسم",
+  "namePlaceholder": "الاسم",
+  "nameRequiredError": "يرجى إدخال اسم",
+  "createButton": "إنشاء",
+  "updateButton": "تحديث",
+  "createClientSuccessMessage": "تم إنشاء العميل بنجاح!",
+  "createClientErrorMessage": "فشل إنشاء العميل!",
+  "updateClientSuccessMessage": "تم تحديث العميل بنجاح!",
+  "updateClientErrorMessage": "فشل تحديث العميل!"
+}

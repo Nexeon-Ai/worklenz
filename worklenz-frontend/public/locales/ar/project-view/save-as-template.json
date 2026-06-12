@@ -1,0 +1,27 @@
+{
+  "title": "حفظ كقالب",
+  "templateName": "اسم القالب",
+  "includes": "ما الذي يجب تضمينه في القالب من المشروع؟",
+  "includesOptions": {
+    "statuses": "الحالات",
+    "phases": "المراحل",
+    "labels": "التصنيفات"
+  },
+  "taskIncludes": "ما الذي يجب تضمينه في القالب من المهام؟",
+  "taskIncludesOptions": {
+    "statuses": "الحالات",
+    "phases": "المراحل",
+    "labels": "التصنيفات",
+    "name": "الاسم",
+    "priority": "الأولوية",
+    "status": "الحالة",
+    "phase": "المرحلة",
+    "label": "التصنيف",
+    "timeEstimate": "الوقت المقدر",
+    "description": "الوصف",
+    "subTasks": "المهام الفرعية"
+  },
+  "cancel": "إلغاء",
+  "save": "حفظ",
+  "templateNamePlaceholder": "أدخل اسم القالب"
+}

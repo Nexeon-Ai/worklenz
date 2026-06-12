@@ -1,0 +1,12 @@
+{
+  "createTaskTemplate": "إنشاء قالب مهام",
+  "editTaskTemplate": "تعديل قالب المهام",
+  "cancelText": "إلغاء",
+  "saveText": "حفظ",
+  "templateNameText": "اسم القالب",
+  "templateNameRequired": "اسم القالب مطلوب",
+  "selectedTasks": "المهام المحددة",
+  "removeTask": "إزالة",
+  "cancelButton": "إلغاء",
+  "saveButton": "حفظ"
+}

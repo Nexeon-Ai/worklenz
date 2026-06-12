@@ -1,0 +1,39 @@
+{
+  "today": "اليوم",
+  "week": "أسبوع",
+  "month": "شهر",
+
+  "settings": "الإعدادات",
+  "workingDays": "أيام العمل",
+  "monday": "الاثنين",
+  "tuesday": "الثلاثاء",
+  "wednesday": "الأربعاء",
+  "thursday": "الخميس",
+  "friday": "الجمعة",
+  "saturday": "السبت",
+  "sunday": "الأحد",
+  "workingHours": "ساعات العمل",
+  "hours": "ساعات",
+  "saveButton": "حفظ",
+
+  "totalAllocation": "إجمالي التخصيص",
+  "timeLogged": "الوقت المسجّل",
+  "remainingTime": "الوقت المتبقي",
+  "total": "الإجمالي",
+  "perDay": "في اليوم",
+  "tasks": "مهام",
+  "startDate": "تاريخ البدء",
+  "endDate": "تاريخ الانتهاء",
+
+  "hoursPerDay": "الساعات في اليوم",
+  "totalHours": "إجمالي الساعات",
+  "deleteButton": "حذف",
+  "cancelButton": "إلغاء",
+
+  "tabTitle": "مهام بدون تاريخي بدء وانتهاء",
+
+  "allocatedTime": "الوقت المخصص",
+  "totalLogged": "إجمالي المسجّل",
+  "loggedBillable": "المسجّل القابل للفوترة",
+  "loggedNonBillable": "المسجّل غير القابل للفوترة"
+}

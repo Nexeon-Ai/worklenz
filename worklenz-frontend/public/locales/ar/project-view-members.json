@@ -1,0 +1,18 @@
+{
+  "nameColumn": "الاسم",
+  "jobTitleColumn": "المسمى الوظيفي",
+  "emailColumn": "البريد الإلكتروني",
+  "tasksColumn": "المهام",
+  "taskProgressColumn": "تقدم المهام",
+  "accessColumn": "الصلاحية",
+  "fileIconAlt": "أيقونة الملف",
+  "deleteConfirmationTitle": "هل أنت متأكد؟",
+  "deleteConfirmationOk": "نعم",
+  "deleteConfirmationCancel": "إلغاء",
+  "refreshButtonTooltip": "تحديث الأعضاء",
+  "deleteButtonTooltip": "إزالة من المشروع",
+  "memberCount": "عضو",
+  "membersCountPlural": "أعضاء",
+  "emptyText": "لا توجد مرفقات في المشروع.",
+  "searchPlaceholder": "ابحث عن الأعضاء"
+}

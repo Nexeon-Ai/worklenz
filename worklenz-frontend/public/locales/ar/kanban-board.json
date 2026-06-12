@@ -1,0 +1,53 @@
+{
+  "rename": "إعادة تسمية",
+  "delete": "حذف",
+  "addTask": "إضافة مهمة",
+  "addSectionButton": "إضافة قسم",
+  "changeCategory": "تغيير الفئة",
+
+  "deleteTooltip": "حذف",
+  "deleteConfirmationTitle": "هل أنت متأكد؟",
+  "deleteConfirmationOk": "نعم",
+  "deleteConfirmationCancel": "إلغاء",
+
+  "deleteTaskTitle": "حذف المهمة",
+  "deleteTaskContent": "هل أنت متأكد من رغبتك في حذف هذه المهمة؟ لا يمكن التراجع عن هذا الإجراء.",
+  "deleteTaskConfirm": "حذف",
+  "deleteTaskCancel": "إلغاء",
+
+  "deleteStatusTitle": "حذف الحالة",
+  "deleteStatusContent": "هل أنت متأكد من رغبتك في حذف هذه الحالة؟ لا يمكن التراجع عن هذا الإجراء.",
+
+  "deletePhaseTitle": "حذف المرحلة",
+  "deletePhaseContent": "هل أنت متأكد من رغبتك في حذف هذه المرحلة؟ لا يمكن التراجع عن هذا الإجراء.",
+
+  "dueDate": "تاريخ الاستحقاق",
+  "cancel": "إلغاء",
+
+  "today": "اليوم",
+  "tomorrow": "غداً",
+  "assignToMe": "إسناد إليّ",
+  "archive": "أرشفة",
+
+  "newTaskNamePlaceholder": "اكتب اسم المهمة",
+  "newSubtaskNamePlaceholder": "اكتب اسم المهمة الفرعية",
+  "untitledSection": "قسم بلا عنوان",
+  "unmapped": "غير مصنّف",
+  "clickToChangeDate": "انقر لتغيير التاريخ",
+  "noDueDate": "لا يوجد تاريخ استحقاق",
+  "save": "حفظ",
+  "clear": "مسح",
+  "nextWeek": "الأسبوع القادم",
+  "noSubtasks": "لا توجد مهام فرعية",
+  "showSubtasks": "إظهار المهام الفرعية",
+  "hideSubtasks": "إخفاء المهام الفرعية",
+
+  "errorLoadingTasks": "خطأ في تحميل المهام",
+  "noTasksFound": "لم يتم العثور على مهام",
+  "loadingFilters": "جارٍ تحميل عوامل التصفية...",
+  "failedToUpdateColumnOrder": "فشل تحديث ترتيب الأعمدة",
+  "failedToUpdatePhaseOrder": "فشل تحديث ترتيب المراحل",
+  "pleaseTryAgain": "يرجى المحاولة مرة أخرى",
+  "taskNotCompleted": "المهمة غير مكتملة",
+  "completeTaskDependencies": "يرجى إكمال المهام المرتبطة قبل المتابعة"
+}

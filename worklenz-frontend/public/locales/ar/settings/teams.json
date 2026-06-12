@@ -1,0 +1,16 @@
+{
+  "title": "الفرق",
+  "team": "فريق",
+  "teams": "الفرق",
+  "name": "الاسم",
+  "created": "تاريخ الإنشاء",
+  "ownsBy": "المالك",
+  "edit": "تعديل",
+  "editTeam": "تعديل الفريق",
+  "pinTooltip": "انقر لتثبيت هذا في القائمة الرئيسية",
+  "editTeamName": "تعديل اسم الفريق",
+  "updateName": "تحديث الاسم",
+  "namePlaceholder": "الاسم",
+  "nameRequired": "يرجى إدخال اسم",
+  "updateFailed": "فشل تغيير اسم الفريق!"
+}

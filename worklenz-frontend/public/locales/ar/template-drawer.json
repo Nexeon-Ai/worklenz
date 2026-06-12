@@ -1,0 +1,19 @@
+{
+  "title": "تعديل قالب المهام",
+  "cancelText": "إلغاء",
+  "saveText": "حفظ",
+  "templateNameText": "اسم القالب",
+  "selectedTasks": "المهام المحددة",
+  "removeTask": "إزالة",
+  "description": "الوصف",
+  "phase": "المرحلة",
+  "statuses": "الحالات",
+  "priorities": "الأولويات",
+  "labels": "التصنيفات",
+  "tasks": "المهام",
+  "noTemplateSelected": "لم يتم اختيار قالب",
+  "noDescription": "لا يوجد وصف",
+  "worklenzTemplates": "قوالب Worklenz",
+  "yourTemplatesLibrary": "مكتبتك",
+  "searchTemplates": "البحث في القوالب"
+}

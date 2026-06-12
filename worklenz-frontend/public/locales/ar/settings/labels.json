@@ -1,0 +1,15 @@
+{
+  "labelColumn": "التسمية",
+  "deleteConfirmationTitle": "هل أنت متأكد؟",
+  "deleteConfirmationOk": "نعم",
+  "deleteConfirmationCancel": "إلغاء",
+  "associatedTaskColumn": "عدد المهام المرتبطة",
+  "searchPlaceholder": "البحث بالاسم",
+  "emptyText": "يمكن إنشاء التسميات أثناء تحديث المهام أو إنشائها.",
+  "pinTooltip": "انقر لتثبيت هذا في القائمة الرئيسية",
+  "colorChangeTooltip": "انقر لتغيير اللون",
+  "pageTitle": "إدارة التسميات",
+  "deleteConfirmTitle": "هل أنت متأكد من رغبتك في حذف هذا؟",
+  "deleteButton": "حذف",
+  "cancelButton": "إلغاء"
+}

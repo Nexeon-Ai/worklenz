@@ -1,0 +1,41 @@
+{
+  "overview": {
+    "title": "نظرة عامة",
+    "statusOverview": "نظرة عامة على الحالات",
+    "priorityOverview": "نظرة عامة على الأولويات",
+    "lastUpdatedTasks": "آخر المهام المحدّثة"
+  },
+  "members": {
+    "title": "الأعضاء",
+    "tooltip": "الأعضاء",
+    "tasksByMembers": "المهام حسب الأعضاء",
+    "tasksByMembersTooltip": "المهام حسب الأعضاء",
+    "name": "الاسم",
+    "taskCount": "عدد المهام",
+    "contribution": "المساهمة",
+    "completed": "مكتملة",
+    "incomplete": "غير مكتملة",
+    "overdue": "متأخرة",
+    "progress": "التقدم"
+  },
+  "tasks": {
+    "overdueTasks": "المهام المتأخرة",
+    "overLoggedTasks": "المهام المتجاوزة للوقت المسجّل",
+    "tasksCompletedEarly": "المهام المكتملة مبكرًا",
+    "tasksCompletedLate": "المهام المكتملة متأخرًا",
+    "overLoggedTasksTooltip": "المهام التي تم تسجيل وقت لها يتجاوز وقتها المقدّر",
+    "overdueTasksTooltip": "المهام التي تجاوزت تاريخ استحقاقها"
+  },
+  "common": {
+    "seeAll": "عرض الكل",
+    "totalLoggedHours": "إجمالي الساعات المسجّلة",
+    "totalEstimation": "إجمالي التقدير",
+    "completedTasks": "المهام المكتملة",
+    "incompleteTasks": "المهام غير المكتملة",
+    "overdueTasks": "المهام المتأخرة",
+    "overdueTasksTooltip": "المهام التي تجاوزت تاريخ استحقاقها",
+    "totalLoggedHoursTooltip": "تقدير المهام والوقت المسجّل لها.",
+    "includeArchivedTasks": "تضمين المهام المؤرشفة",
+    "export": "تصدير"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "categoryColumn": "الفئة",
+  "deleteConfirmationTitle": "هل أنت متأكد؟",
+  "deleteConfirmationOk": "نعم",
+  "deleteConfirmationCancel": "إلغاء",
+  "associatedTaskColumn": "المشاريع المرتبطة",
+  "searchPlaceholder": "البحث بالاسم",
+  "emptyText": "يمكن إنشاء الفئات أثناء تحديث المشاريع أو إنشائها.",
+  "colorChangeTooltip": "انقر لتغيير اللون"
+}

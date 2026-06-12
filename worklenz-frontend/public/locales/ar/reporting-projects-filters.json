@@ -1,0 +1,35 @@
+{
+  "searchByNamePlaceholder": "البحث بالاسم",
+  "searchByCategoryPlaceholder": "البحث بالفئة",
+
+  "statusText": "الحالة",
+  "healthText": "السلامة",
+  "categoryText": "الفئة",
+  "projectManagerText": "مدير المشروع",
+  "showFieldsText": "إظهار الحقول",
+
+  "cancelledText": "ملغى",
+  "blockedText": "معطّل",
+  "onHoldText": "معلّق",
+  "proposedText": "مقترح",
+  "inPlanningText": "قيد التخطيط",
+  "inProgressText": "قيد التنفيذ",
+  "completedText": "مكتمل",
+  "continuousText": "مستمر",
+
+  "notSetText": "غير محدد",
+  "needsAttentionText": "يحتاج إلى انتباه",
+  "atRiskText": "في خطر",
+  "goodText": "جيد",
+
+  "nameText": "المشروع",
+  "estimatedVsActualText": "المقدّر مقابل الفعلي",
+  "tasksProgressText": "تقدم المهام",
+  "lastActivityText": "آخر نشاط",
+  "datesText": "تاريخا البدء/الانتهاء",
+  "daysLeftText": "الأيام المتبقية/المتأخرة",
+  "projectHealthText": "سلامة المشروع",
+  "projectUpdateText": "تحديث المشروع",
+  "clientText": "العميل",
+  "teamText": "الفريق"
+}

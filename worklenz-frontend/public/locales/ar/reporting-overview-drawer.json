@@ -1,0 +1,39 @@
+{
+  "exportButton": "تصدير",
+  "projectsButton": "المشاريع",
+  "membersButton": "الأعضاء",
+  "searchByNameInputPlaceholder": "ابحث بالاسم",
+
+  "overviewTab": "نظرة عامة",
+  "projectsTab": "المشاريع",
+  "membersTab": "الأعضاء",
+
+  "projectsByStatusText": "المشاريع حسب الحالة",
+  "projectsByCategoryText": "المشاريع حسب الفئة",
+  "projectsByHealthText": "المشاريع حسب السلامة",
+
+  "projectsText": "المشاريع",
+  "allText": "الكل",
+
+  "cancelledText": "ملغى",
+  "blockedText": "معطّل",
+  "onHoldText": "معلّق",
+  "proposedText": "مقترح",
+  "inPlanningText": "قيد التخطيط",
+  "inProgressText": "قيد التنفيذ",
+  "completedText": "مكتمل",
+  "continuousText": "مستمر",
+
+  "notSetText": "غير محدد",
+  "needsAttentionText": "يحتاج إلى اهتمام",
+  "atRiskText": "في خطر",
+  "goodText": "جيد",
+
+  "nameColumn": "الاسم",
+  "emailColumn": "البريد الإلكتروني",
+  "projectsColumn": "المشاريع",
+  "tasksColumn": "المهام",
+  "overdueTasksColumn": "المهام المتأخرة",
+  "completedTasksColumn": "المهام المكتملة",
+  "ongoingTasksColumn": "المهام الجارية"
+}

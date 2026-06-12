@@ -1,0 +1,52 @@
+{
+  "projectCount": "مشروع",
+  "projectCountPlural": "مشاريع",
+  "includeArchivedButton": "تضمين المشاريع المؤرشفة",
+  "exportButton": "تصدير",
+  "excelButton": "Excel",
+
+  "projectColumn": "المشروع",
+  "estimatedVsActualColumn": "المقدّر مقابل الفعلي",
+  "tasksProgressColumn": "تقدم المهام",
+  "lastActivityColumn": "آخر نشاط",
+  "statusColumn": "الحالة",
+  "datesColumn": "تاريخا البدء/الانتهاء",
+  "daysLeftColumn": "الأيام المتبقية/المتأخرة",
+  "projectHealthColumn": "سلامة المشروع",
+  "categoryColumn": "الفئة",
+  "projectUpdateColumn": "تحديث المشروع",
+  "clientColumn": "العميل",
+  "teamColumn": "الفريق",
+  "projectManagerColumn": "مدير المشروع",
+
+  "openButton": "فتح",
+
+  "estimatedText": "المقدّر",
+  "actualText": "الفعلي",
+
+  "todoText": "للتنفيذ",
+  "doingText": "قيد التنفيذ",
+  "doneText": "منجز",
+
+  "cancelledText": "ملغى",
+  "blockedText": "معطّل",
+  "onHoldText": "معلّق",
+  "proposedText": "مقترح",
+  "inPlanningText": "قيد التخطيط",
+  "inProgressText": "قيد التنفيذ",
+  "completedText": "مكتمل",
+  "continuousText": "مستمر",
+
+  "daysLeftText": "أيام متبقية",
+  "dayLeftText": "يوم متبقٍ",
+  "daysOverdueText": "أيام متأخرة",
+
+  "notSetText": "غير محدد",
+  "needsAttentionText": "يحتاج إلى انتباه",
+  "atRiskText": "في خطر",
+  "goodText": "جيد",
+
+  "setCategoryText": "تعيين الفئة",
+  "searchByNameInputPlaceholder": "البحث بالاسم",
+  "todayText": "اليوم"
+}

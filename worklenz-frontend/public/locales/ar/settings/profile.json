@@ -1,0 +1,14 @@
+{
+  "uploadError": "يمكنك رفع ملفات JPG/PNG فقط!",
+  "uploadSizeError": "يجب أن يكون حجم الصورة أقل من 2 ميغابايت!",
+  "upload": "رفع",
+  "nameLabel": "الاسم",
+  "nameRequiredError": "الاسم مطلوب",
+  "emailLabel": "البريد الإلكتروني",
+  "emailRequiredError": "البريد الإلكتروني مطلوب",
+  "saveChanges": "حفظ التغييرات",
+  "profileJoinedText": "انضم منذ شهر",
+  "profileLastUpdatedText": "آخر تحديث منذ شهر",
+  "avatarTooltip": "انقر لرفع صورة شخصية",
+  "title": "إعدادات الملف الشخصي"
+}

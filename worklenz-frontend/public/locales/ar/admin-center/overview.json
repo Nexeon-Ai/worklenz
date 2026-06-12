@@ -1,0 +1,11 @@
+{
+  "overview": "نظرة عامة",
+  "name": "اسم المؤسسة",
+  "owner": "مالك المؤسسة",
+  "admins": "مديرو المؤسسة",
+  "contactNumber": "إضافة رقم تواصل",
+  "edit": "تعديل",
+  "emailAddress": "البريد الإلكتروني",
+  "enterOrganizationName": "أدخل اسم المؤسسة",
+  "ownerSuffix": " (المالك)"
+}

@@ -1,0 +1,35 @@
+{
+  "yesterdayText": "أمس",
+  "lastSevenDaysText": "آخر 7 أيام",
+  "lastWeekText": "الأسبوع الماضي",
+  "lastThirtyDaysText": "آخر 30 يومًا",
+  "lastMonthText": "الشهر الماضي",
+  "lastThreeMonthsText": "آخر 3 أشهر",
+  "allTimeText": "كل الفترات",
+  "customRangeText": "نطاق مخصص",
+  "startDateInputPlaceholder": "تاريخ البدء",
+  "EndDateInputPlaceholder": "تاريخ الانتهاء",
+  "filterButton": "تصفية",
+
+  "membersTitle": "الأعضاء",
+  "includeArchivedButton": "تضمين المشاريع المؤرشفة",
+  "exportButton": "تصدير",
+  "excelButton": "Excel",
+  "searchByNameInputPlaceholder": "ابحث بالاسم",
+
+  "memberColumn": "العضو",
+  "tasksProgressColumn": "تقدم المهام",
+  "tasksAssignedColumn": "المهام المسندة",
+  "completedTasksColumn": "المهام المكتملة",
+  "overdueTasksColumn": "المهام المتأخرة",
+  "ongoingTasksColumn": "المهام الجارية",
+
+  "tasksAssignedColumnTooltip": "المهام المسندة خلال النطاق الزمني المحدد",
+  "overdueTasksColumnTooltip": "المهام المتأخرة حتى نهاية النطاق الزمني المحدد",
+  "completedTasksColumnTooltip": "المهام المكتملة خلال النطاق الزمني المحدد",
+  "ongoingTasksColumnTooltip": "المهام التي بدأت ولم تكتمل بعد",
+
+  "todoText": "قيد الانتظار",
+  "doingText": "قيد التنفيذ",
+  "doneText": "منجزة"
+}

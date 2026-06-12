@@ -1,0 +1,25 @@
+{
+  "overviewTitle": "نظرة عامة",
+  "includeArchivedButton": "تضمين المشاريع المؤرشفة",
+
+  "teamCount": "فريق",
+  "teamCountPlural": "فرق",
+  "projectCount": "مشروع",
+  "projectCountPlural": "مشاريع",
+  "memberCount": "عضو",
+  "memberCountPlural": "أعضاء",
+  "activeProjectCount": "مشروع نشط",
+  "activeProjectCountPlural": "مشاريع نشطة",
+  "overdueProjectCount": "مشروع متأخر",
+  "overdueProjectCountPlural": "مشاريع متأخرة",
+  "unassignedMemberCount": "عضو غير مسند",
+  "unassignedMemberCountPlural": "أعضاء غير مسندين",
+  "memberWithOverdueTaskCount": "عضو لديه مهمة متأخرة",
+  "memberWithOverdueTaskCountPlural": "أعضاء لديهم مهام متأخرة",
+
+  "teamsText": "الفرق",
+
+  "nameColumn": "الاسم",
+  "projectsColumn": "المشاريع",
+  "membersColumn": "الأعضاء"
+}

@@ -1,0 +1,146 @@
+{
+  "keyColumn": "المفتاح",
+  "taskColumn": "المهمة",
+  "descriptionColumn": "الوصف",
+  "progressColumn": "التقدم",
+  "membersColumn": "الأعضاء",
+  "assigneesColumn": "المكلّفون",
+  "labelsColumn": "التصنيفات",
+  "phasesColumn": "المراحل",
+  "phaseColumn": "المرحلة",
+  "statusColumn": "الحالة",
+  "priorityColumn": "الأولوية",
+  "timeTrackingColumn": "تتبع الوقت",
+  "timetrackingColumn": "تتبع الوقت",
+  "estimationColumn": "التقدير",
+  "startDateColumn": "تاريخ البدء",
+  "startdateColumn": "تاريخ البدء",
+  "dueDateColumn": "تاريخ الاستحقاق",
+  "duedateColumn": "تاريخ الاستحقاق",
+  "completedDateColumn": "تاريخ الإكمال",
+  "completeddateColumn": "تاريخ الإكمال",
+  "createdDateColumn": "تاريخ الإنشاء",
+  "createddateColumn": "تاريخ الإنشاء",
+  "lastUpdatedColumn": "آخر تحديث",
+  "lastupdatedColumn": "آخر تحديث",
+  "reporterColumn": "المُبلِّغ",
+  "dueTimeColumn": "وقت الاستحقاق",
+  "todoSelectorText": "للتنفيذ",
+  "doingSelectorText": "قيد التنفيذ",
+  "doneSelectorText": "منجز",
+
+  "lowSelectorText": "منخفضة",
+  "mediumSelectorText": "متوسطة",
+  "highSelectorText": "عالية",
+
+  "selectText": "اختيار",
+  "labelsSelectorInputTip": "اضغط Enter للإنشاء!",
+
+  "addTaskText": "إضافة مهمة",
+  "addSubTaskText": "إضافة مهمة فرعية",
+  "addTaskInputPlaceholder": "اكتب مهمتك واضغط Enter",
+  "noTasksInGroup": "لا توجد مهام في هذه المجموعة",
+  "dropTaskHere": "أفلت المهمة هنا",
+
+  "openButton": "فتح",
+  "okButton": "موافق",
+
+  "noLabelsFound": "لم يتم العثور على تصنيفات",
+  "searchInputPlaceholder": "ابحث أو أنشئ",
+  "assigneeSelectorInviteButton": "دعوة عضو جديد عبر البريد الإلكتروني",
+  "labelInputPlaceholder": "ابحث أو أنشئ",
+  "searchLabelsPlaceholder": "البحث في التصنيفات...",
+  "createLabelButton": "إنشاء \"{{name}}\"",
+  "manageLabelsPath": "الإعدادات ← التصنيفات",
+
+  "pendingInvitation": "دعوة معلّقة",
+
+  "contextMenu": {
+    "assignToMe": "إسناد إليّ",
+    "copyLink": "نسخ رابط المهمة",
+    "linkCopied": "تم نسخ الرابط إلى الحافظة",
+    "linkCopyFailed": "فشل نسخ الرابط",
+    "moveTo": "نقل إلى",
+    "unarchive": "إلغاء الأرشفة",
+    "archive": "أرشفة",
+    "convertToSubTask": "تحويل إلى مهمة فرعية",
+    "convertToTask": "تحويل إلى مهمة",
+    "delete": "حذف",
+    "searchByNameInputPlaceholder": "البحث بالاسم"
+  },
+  "setDueDate": "تعيين تاريخ الاستحقاق",
+  "setStartDate": "تعيين تاريخ البدء",
+  "clearDueDate": "مسح تاريخ الاستحقاق",
+  "clearStartDate": "مسح تاريخ البدء",
+  "dueDatePlaceholder": "تاريخ الاستحقاق",
+  "startDatePlaceholder": "تاريخ البدء",
+
+  "emptyStates": {
+    "noTaskGroups": "لم يتم العثور على مجموعات مهام",
+    "noTaskGroupsDescription": "ستظهر المهام هنا عند إنشائها أو عند تطبيق عوامل التصفية.",
+    "errorPrefix": "خطأ:",
+    "dragTaskFallback": "مهمة"
+  },
+
+  "customColumns": {
+    "addCustomColumn": "إضافة عمود مخصص",
+    "customColumnHeader": "عمود مخصص",
+    "customColumnSettings": "إعدادات العمود المخصص",
+    "noCustomValue": "لا توجد قيمة",
+    "peopleField": "حقل أشخاص",
+    "noDate": "لا يوجد تاريخ",
+    "unsupportedField": "نوع حقل غير مدعوم",
+
+    "modal": {
+      "addFieldTitle": "إضافة حقل",
+      "editFieldTitle": "تعديل الحقل",
+      "fieldTitle": "عنوان الحقل",
+      "fieldTitleRequired": "عنوان الحقل مطلوب",
+      "columnTitlePlaceholder": "عنوان العمود",
+      "type": "النوع",
+      "deleteConfirmTitle": "هل أنت متأكد من رغبتك في حذف هذا العمود المخصص؟",
+      "deleteConfirmDescription": "لا يمكن التراجع عن هذا الإجراء. سيتم حذف جميع البيانات المرتبطة بهذا العمود نهائيًا.",
+      "deleteButton": "حذف",
+      "cancelButton": "إلغاء",
+      "createButton": "إنشاء",
+      "updateButton": "تحديث",
+      "createSuccessMessage": "تم إنشاء العمود المخصص بنجاح",
+      "updateSuccessMessage": "تم تحديث العمود المخصص بنجاح",
+      "deleteSuccessMessage": "تم حذف العمود المخصص بنجاح",
+      "deleteErrorMessage": "فشل حذف العمود المخصص",
+      "createErrorMessage": "فشل إنشاء العمود المخصص",
+      "updateErrorMessage": "فشل تحديث العمود المخصص"
+    },
+
+    "fieldTypes": {
+      "people": "أشخاص",
+      "number": "رقم",
+      "date": "تاريخ",
+      "selection": "اختيار",
+      "checkbox": "خانة اختيار",
+      "labels": "تصنيفات",
+      "key": "مفتاح",
+      "formula": "معادلة"
+    }
+  },
+
+  "indicators": {
+    "tooltips": {
+      "subtasks": "{{count}} مهمة فرعية",
+      "subtasks_plural": "{{count}} مهام فرعية",
+      "comments": "{{count}} تعليق",
+      "comments_plural": "{{count}} تعليقات",
+      "attachments": "{{count}} مرفق",
+      "attachments_plural": "{{count}} مرفقات",
+      "subscribers": "المهمة لديها مشتركون",
+      "dependencies": "المهمة لديها تبعيات",
+      "recurring": "مهمة متكررة"
+    }
+  },
+
+  "timer": {
+    "conflictTitle": "المؤقّت قيد التشغيل بالفعل",
+    "conflictMessage": "لديك مؤقّت قيد التشغيل للمهمة \"{{taskName}}\" في مشروع \"{{projectName}}\". هل تريد إيقاف ذلك المؤقّت وبدء مؤقّت جديد لهذه المهمة؟",
+    "stopAndStart": "إيقاف وبدء مؤقّت جديد"
+  }
+}

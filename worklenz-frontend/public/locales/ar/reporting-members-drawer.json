@@ -1,0 +1,90 @@
+{
+  "exportButton": "تصدير",
+  "timeLogsButton": "سجلات الوقت",
+  "activityLogsButton": "سجلات النشاط",
+  "tasksButton": "المهام",
+  "searchByNameInputPlaceholder": "ابحث بالاسم",
+
+  "overviewTab": "نظرة عامة",
+  "timeLogsTab": "سجلات الوقت",
+  "activityLogsTab": "سجلات النشاط",
+  "tasksTab": "المهام",
+
+  "projectsText": "المشاريع",
+  "totalTasksText": "إجمالي المهام",
+  "assignedTasksText": "المهام المسندة",
+  "completedTasksText": "المهام المكتملة",
+  "ongoingTasksText": "المهام الجارية",
+  "overdueTasksText": "المهام المتأخرة",
+  "loggedHoursText": "الساعات المسجّلة",
+
+  "tasksText": "المهام",
+  "allText": "الكل",
+
+  "tasksByProjectsText": "المهام حسب المشاريع",
+  "tasksByStatusText": "المهام حسب الحالة",
+  "tasksByPriorityText": "المهام حسب الأولوية",
+
+  "todoText": "قيد الانتظار",
+  "doingText": "قيد التنفيذ",
+  "doneText": "منجزة",
+  "lowText": "منخفضة",
+  "mediumText": "متوسطة",
+  "highText": "عالية",
+
+  "billableButton": "قابل للفوترة",
+  "billableText": "قابل للفوترة",
+  "nonBillableText": "غير قابل للفوترة",
+
+  "timeLogsEmptyPlaceholder": "لا توجد سجلات وقت لعرضها",
+  "loggedText": "تم تسجيل",
+  "forText": "لـ",
+  "inText": "في",
+  "updatedText": "تم تحديث",
+  "fromText": "من",
+  "toText": "إلى",
+  "withinText": "خلال",
+
+  "activityLogsEmptyPlaceholder": "لا توجد سجلات نشاط لعرضها",
+
+  "filterByText": "تصفية حسب:",
+  "selectProjectPlaceholder": "اختر المشروع",
+
+  "taskColumn": "المهمة",
+  "nameColumn": "الاسم",
+  "projectColumn": "المشروع",
+  "statusColumn": "الحالة",
+  "priorityColumn": "الأولوية",
+  "dueDateColumn": "تاريخ الاستحقاق",
+  "completedDateColumn": "تاريخ الإكمال",
+  "estimatedTimeColumn": "الوقت المقدّر",
+  "loggedTimeColumn": "الوقت المسجّل",
+  "overloggedTimeColumn": "الوقت الزائد المسجّل",
+  "daysLeftColumn": "الأيام المتبقية/المتأخرة",
+  "startDateColumn": "تاريخ البدء",
+  "endDateColumn": "تاريخ الانتهاء",
+  "actualTimeColumn": "الوقت الفعلي",
+  "projectHealthColumn": "سلامة المشروع",
+  "categoryColumn": "الفئة",
+  "projectManagerColumn": "مدير المشروع",
+
+  "tasksStatsOverviewDrawerTitle": " - المهام",
+  "projectsStatsOverviewDrawerTitle": " - المشاريع",
+
+  "cancelledText": "ملغى",
+  "blockedText": "معطّل",
+  "onHoldText": "معلّق",
+  "proposedText": "مقترح",
+  "inPlanningText": "قيد التخطيط",
+  "inProgressText": "قيد التنفيذ",
+  "completedText": "مكتمل",
+  "continuousText": "مستمر",
+
+  "daysLeftText": "يوم متبقٍ",
+  "daysOverdueText": "يوم تأخير",
+
+  "notSetText": "غير محدد",
+  "needsAttentionText": "يحتاج إلى اهتمام",
+  "atRiskText": "في خطر",
+  "goodText": "جيد"
+}

@@ -1,8 +1,10 @@
 import { ConfigProvider, theme } from '@/shared/antd-imports';
 import React, { useEffect, useRef, memo, useMemo, useCallback } from 'react';
+import arEG from 'antd/locale/ar_EG';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import { useAppDispatch } from '@/hooks/useAppDispatch';
 import { initializeTheme } from './themeSlice';
+import { Language } from '@/features/i18n/localesSlice';
 import { colors } from '../../styles/colors';
 
 type ChildrenProp = {
@@ -13,7 +15,17 @@ const ThemeWrapper = memo(({ children }: ChildrenProp) => {
   const dispatch = useAppDispatch();
   const themeMode = useAppSelector(state => state.themeReducer.mode);
   const isInitialized = useAppSelector(state => state.themeReducer.isInitialized);
+  const lng = useAppSelector(state => state.localesReducer.lng);
   const configRef = useRef<HTMLDivElement>(null);
+
+  // RTL layout for Arabic: antd mirrors all components via ConfigProvider
+  // direction; the document dir flips native text flow and scrollbars.
+  const isRtl = lng === Language.AR;
+
+  useEffect(() => {
+    document.documentElement.dir = isRtl ? 'rtl' : 'ltr';
+    document.documentElement.lang = lng === Language.ZH_CN ? 'zh-CN' : lng;
+  }, [isRtl, lng]);
 
   // Memoize theme configuration to prevent unnecessary re-renders
   const themeConfig = useMemo(
@@ -78,7 +90,13 @@ const ThemeWrapper = memo(({ children }: ChildrenProp) => {
 
   return (
     <div ref={configRef} className={themeClassName}>
-      <ConfigProvider theme={themeConfig}>{children}</ConfigProvider>
+      <ConfigProvider
+        theme={themeConfig}
+        direction={isRtl ? 'rtl' : 'ltr'}
+        locale={isRtl ? arEG : undefined}
+      >
+        {children}
+      </ConfigProvider>
     </div>
   );
 });

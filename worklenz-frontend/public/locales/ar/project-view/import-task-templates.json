@@ -1,0 +1,11 @@
+{
+  "importTaskTemplate": "استيراد قالب مهام",
+  "templateName": "اسم القالب",
+  "templateDescription": "وصف القالب",
+  "selectedTasks": "المهام المحددة",
+  "tasks": "المهام",
+  "templates": "القوالب",
+  "remove": "إزالة",
+  "cancel": "إلغاء",
+  "import": "استيراد"
+}

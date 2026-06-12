@@ -1,0 +1,57 @@
+{
+  "includeArchivedProjects": "تضمين المشاريع المؤرشفة",
+  "export": "تصدير",
+  "timeSheet": "سجل الدوام",
+
+  "searchByName": "البحث بالاسم",
+  "selectAll": "تحديد الكل",
+  "teams": "الفرق",
+
+  "searchByProject": "البحث باسم المشروع",
+  "projects": "المشاريع",
+
+  "searchByCategory": "البحث باسم الفئة",
+  "categories": "الفئات",
+
+  "billable": "قابل للفوترة",
+  "nonBillable": "غير قابل للفوترة",
+
+  "total": "الإجمالي",
+
+  "projectsTimeSheet": "سجل دوام المشاريع",
+
+  "loggedTime": "الوقت المسجّل (بالساعات)",
+
+  "exportToExcel": "تصدير إلى Excel",
+  "logged": "مسجّل",
+  "for": "لـ",
+
+  "membersTimeSheet": "سجل دوام الأعضاء",
+  "member": "العضو",
+
+  "estimatedVsActual": "المقدّر مقابل الفعلي",
+  "workingDays": "أيام العمل",
+  "manDays": "أيام عمل الأفراد",
+  "days": "أيام",
+  "estimatedDays": "الأيام المقدّرة",
+  "actualDays": "الأيام الفعلية",
+
+  "noCategories": "لم يتم العثور على فئات",
+  "noCategory": "بدون فئة",
+  "noProjects": "لم يتم العثور على مشاريع",
+  "noTeams": "لم يتم العثور على فرق",
+  "noData": "لم يتم العثور على بيانات",
+
+  "groupBy": "تجميع حسب",
+  "groupByCategory": "الفئة",
+  "groupByTeam": "الفريق",
+  "groupByStatus": "الحالة",
+  "groupByNone": "بدون",
+  "clearSearch": "مسح البحث",
+  "selectedProjects": "المشاريع المحددة",
+  "projectsSelected": "مشاريع محددة",
+  "showSelected": "إظهار المحدد فقط",
+  "expandAll": "توسيع الكل",
+  "collapseAll": "طي الكل",
+  "ungrouped": "غير مجمّع"
+}

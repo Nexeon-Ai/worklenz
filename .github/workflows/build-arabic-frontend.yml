@@ -1,0 +1,54 @@
+name: Build & publish Arabic Worklenz frontend (GHCR)
+
+# Builds the Worklenz frontend with Arabic + RTL support and publishes it to
+# this fork's GitHub Container Registry so the Coolify deployment can pull it.
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Moving tag to publish (immutable ar-<sha> is always pushed too)'
+        default: 'ar'
+        required: false
+  push:
+    branches: [feat/arabic-rtl]
+    paths:
+      - 'worklenz-frontend/**'
+      - '.github/workflows/build-arabic-frontend.yml'
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Resolve image names
+        id: meta
+        run: |
+          OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          MOVING="${{ github.event.inputs.tag || 'ar' }}"
+          echo "tags=ghcr.io/${OWNER}/worklenz-frontend:${MOVING},ghcr.io/${OWNER}/worklenz-frontend:ar-${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: ./worklenz-frontend
+          platforms: linux/amd64
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

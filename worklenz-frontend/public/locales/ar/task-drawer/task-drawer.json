@@ -1,0 +1,129 @@
+{
+  "taskHeader": {
+    "taskNamePlaceholder": "اكتب مهمتك",
+    "deleteTask": "حذف المهمة",
+    "parentTask": "المهمة الرئيسية",
+    "currentTask": "المهمة الحالية",
+    "back": "رجوع",
+    "backToParent": "العودة إلى المهمة الرئيسية",
+    "toParentTask": "إلى المهمة الرئيسية",
+    "loadingHierarchy": "جارٍ تحميل التسلسل الهرمي..."
+  },
+  "taskInfoTab": {
+    "title": "معلومات",
+    "details": {
+      "title": "التفاصيل",
+      "task-key": "معرّف المهمة",
+      "phase": "المرحلة",
+      "assignees": "المكلّفون",
+      "due-date": "تاريخ الاستحقاق",
+      "time-estimation": "الوقت المقدر",
+      "priority": "الأولوية",
+      "labels": "التصنيفات",
+      "billable": "قابل للفوترة",
+      "notify": "إشعار",
+      "when-done-notify": "عند الإنجاز، أشعِر",
+      "start-date": "تاريخ البدء",
+      "end-date": "تاريخ الانتهاء",
+      "hide-start-date": "إخفاء تاريخ البدء",
+      "show-start-date": "إظهار تاريخ البدء",
+      "hours": "ساعات",
+      "minutes": "دقائق",
+      "progressValue": "قيمة التقدم",
+      "progressValueTooltip": "حدد نسبة التقدم (0-100%)",
+      "progressValueRequired": "يرجى إدخال قيمة التقدم",
+      "progressValueRange": "يجب أن يكون التقدم بين 0 و100",
+      "taskWeight": "وزن المهمة",
+      "taskWeightTooltip": "حدد وزن هذه المهمة الفرعية (نسبة مئوية)",
+      "taskWeightRequired": "يرجى إدخال وزن المهمة",
+      "taskWeightRange": "يجب أن يكون الوزن بين 0 و100",
+      "recurring": "متكررة"
+    },
+    "labels": {
+      "labelInputPlaceholder": "ابحث أو أنشئ",
+      "labelsSelectorInputTip": "اضغط Enter للإنشاء"
+    },
+    "description": {
+      "title": "الوصف",
+      "placeholder": "أضف وصفًا أكثر تفصيلًا..."
+    },
+    "subTasks": {
+      "title": "المهام الفرعية",
+      "addSubTask": "إضافة مهمة فرعية",
+      "addSubTaskInputPlaceholder": "اكتب مهمتك واضغط Enter",
+      "refreshSubTasks": "تحديث المهام الفرعية",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "confirmDeleteSubTask": "هل أنت متأكد من رغبتك في حذف هذه المهمة الفرعية؟",
+      "deleteSubTask": "حذف المهمة الفرعية"
+    },
+    "dependencies": {
+      "title": "الاعتماديات",
+      "addDependency": "+ إضافة اعتمادية جديدة",
+      "blockedBy": "محجوبة بواسطة",
+      "searchTask": "اكتب للبحث عن مهمة",
+      "noTasksFound": "لم يتم العثور على مهام",
+      "confirmDeleteDependency": "هل أنت متأكد من رغبتك في الحذف؟"
+    },
+    "attachments": {
+      "title": "المرفقات",
+      "chooseOrDropFileToUpload": "اختر ملفًا أو أفلته هنا للرفع",
+      "uploading": "جارٍ الرفع..."
+    },
+    "comments": {
+      "title": "التعليقات",
+      "addComment": "+ إضافة تعليق جديد",
+      "noComments": "لا توجد تعليقات بعد. كن أول من يعلّق!",
+      "delete": "حذف",
+      "confirmDeleteComment": "هل أنت متأكد من رغبتك في حذف هذا التعليق؟",
+      "addCommentPlaceholder": "أضف تعليقًا...",
+      "cancel": "إلغاء",
+      "commentButton": "تعليق",
+      "attachFiles": "إرفاق ملفات",
+      "addMoreFiles": "إضافة المزيد من الملفات",
+      "selectedFiles": "الملفات المحددة (حتى 25 ميغابايت، بحد أقصى {count})",
+      "maxFilesError": "يمكنك رفع {count} ملفات كحد أقصى",
+      "processFilesError": "فشلت معالجة الملفات",
+      "addCommentError": "يرجى إضافة تعليق أو إرفاق ملفات",
+      "createdBy": "أُنشئ {{time}} بواسطة {{user}}",
+      "updatedTime": "حُدّث {{time}}"
+    },
+    "searchInputPlaceholder": "البحث بالاسم",
+    "pendingInvitation": "دعوة معلّقة"
+  },
+  "taskTimeLogTab": {
+    "title": "سجل الوقت",
+    "addTimeLog": "إضافة سجل وقت جديد",
+    "totalLogged": "إجمالي الوقت المسجل",
+    "exportToExcel": "تصدير إلى Excel",
+    "noTimeLogsFound": "لم يتم العثور على سجلات وقت",
+    "timeLogForm": {
+      "date": "التاريخ",
+      "startTime": "وقت البدء",
+      "endTime": "وقت الانتهاء",
+      "workDescription": "وصف العمل",
+      "descriptionPlaceholder": "أضف وصفًا",
+      "logTime": "تسجيل الوقت",
+      "updateTime": "تحديث الوقت",
+      "cancel": "إلغاء",
+      "selectDateError": "يرجى اختيار تاريخ",
+      "selectStartTimeError": "يرجى اختيار وقت البدء",
+      "selectEndTimeError": "يرجى اختيار وقت الانتهاء",
+      "endTimeAfterStartError": "يجب أن يكون وقت الانتهاء بعد وقت البدء"
+    }
+  },
+  "taskActivityLogTab": {
+    "title": "سجل النشاط",
+    "add": "إضافة",
+    "remove": "إزالة",
+    "none": "لا شيء",
+    "weight": "الوزن",
+    "createdTask": "أنشأ المهمة."
+  },
+  "taskProgress": {
+    "markAsDoneTitle": "وضع علامة \"منجزة\" على المهمة؟",
+    "confirmMarkAsDone": "نعم، ضع علامة \"منجزة\"",
+    "cancelMarkAsDone": "لا، احتفظ بالحالة الحالية",
+    "markAsDoneDescription": "لقد حددت التقدم بنسبة 100%. هل ترغب في تحديث حالة المهمة إلى \"منجزة\"؟"
+  }
+}

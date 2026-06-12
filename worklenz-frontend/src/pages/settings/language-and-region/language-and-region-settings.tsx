@@ -63,6 +63,10 @@ const LanguageAndRegionSettings = () => {
       value: Language.KO,
       label: '한국어',
     },
+    {
+      value: Language.AR,
+      label: 'العربية',
+    },
   ];
 
   const handleLanguageChange = async (values: { language?: ILanguageType; timezone?: string }) => {

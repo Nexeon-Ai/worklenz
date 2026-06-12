@@ -1,0 +1,14 @@
+{
+  "modalTitle": "ساعدنا في تحسين تجربتك",
+  "skip": "تخطي الآن",
+  "previous": "السابق",
+  "next": "التالي",
+  "completeSurvey": "إكمال الاستبيان",
+  "submitting": "جارٍ إرسال إجاباتك...",
+  "submitSuccessTitle": "شكرًا لك!",
+  "submitSuccessSubtitle": "ملاحظاتك تساعدنا في تحسين Worklenz للجميع.",
+  "submitSuccessMessage": "شكرًا لإكمالك الاستبيان!",
+  "submitErrorMessage": "فشل إرسال الاستبيان. يرجى المحاولة مرة أخرى.",
+  "submitErrorLog": "فشل إرسال الاستبيان",
+  "fetchErrorLog": "فشل جلب الاستبيان"
+}

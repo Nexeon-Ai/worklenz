@@ -1,0 +1,14 @@
+{
+  "title": "تأكيد بريد إعادة التعيين",
+  "description": "أدخل كلمة المرور الجديدة",
+  "placeholder": "أدخل كلمة المرور الجديدة",
+  "confirmPasswordPlaceholder": "أكّد كلمة المرور الجديدة",
+  "passwordHint": "8 أحرف على الأقل، مع حروف كبيرة وصغيرة ورقم ورمز.",
+  "resetPasswordButton": "إعادة تعيين كلمة المرور",
+  "orText": "أو",
+  "resendResetEmail": "إعادة إرسال بريد إعادة التعيين",
+  "passwordRequired": "يرجى إدخال كلمة المرور الجديدة",
+  "returnToLoginButton": "العودة إلى تسجيل الدخول",
+  "confirmPasswordRequired": "يرجى تأكيد كلمة المرور الجديدة",
+  "passwordMismatch": "كلمتا المرور غير متطابقتين"
+}

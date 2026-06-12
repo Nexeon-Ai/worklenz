@@ -1,0 +1,27 @@
+{
+  "headerDescription": "تسجيل الدخول إلى حسابك",
+  "emailLabel": "البريد الإلكتروني",
+  "emailPlaceholder": "أدخل بريدك الإلكتروني",
+  "emailRequired": "يرجى إدخال بريدك الإلكتروني!",
+  "passwordLabel": "كلمة المرور",
+  "passwordPlaceholder": "أدخل كلمة المرور",
+  "passwordRequired": "يرجى إدخال كلمة المرور!",
+  "rememberMe": "تذكرني",
+  "loginButton": "تسجيل الدخول",
+  "signupButton": "إنشاء حساب",
+  "forgotPasswordButton": "هل نسيت كلمة المرور؟",
+  "signInWithGoogleButton": "تسجيل الدخول باستخدام Google",
+  "dontHaveAccountText": "ليس لديك حساب؟",
+  "orText": "أو",
+  "successMessage": "لقد سجّلت الدخول بنجاح!",
+  "loginError": "فشل تسجيل الدخول",
+  "googleLoginError": "فشل تسجيل الدخول عبر Google",
+  "validationMessages": {
+    "email": "يرجى إدخال بريد إلكتروني صالح",
+    "password": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل"
+  },
+  "errorMessages": {
+    "loginErrorTitle": "فشل تسجيل الدخول",
+    "loginErrorMessage": "يرجى التحقق من بريدك الإلكتروني وكلمة المرور والمحاولة مرة أخرى"
+  }
+}
