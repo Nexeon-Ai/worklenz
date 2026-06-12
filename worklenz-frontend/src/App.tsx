@@ -94,13 +94,10 @@ const App: React.FC = memo(() => {
         // Start CSS performance monitoring
         CSSPerformanceMonitor.monitorLayoutShifts();
         CSSPerformanceMonitor.monitorRenderBlocking();
-        
-        // Preload critical fonts to prevent layout shifts
-        LayoutStabilizer.preloadFonts([
-          { family: 'Inter', weight: '400' },
-          { family: 'Inter', weight: '500' },
-          { family: 'Inter', weight: '600' },
-        ]);
+
+        // Inter is preloaded from index.html (/fonts/inter-var.woff2);
+        // LayoutStabilizer.preloadFonts built /fonts/<family>-<weight>.woff2
+        // URLs that were never shipped, causing 404→HTML font decode errors.
       } catch (error) {
         if (isMounted) {
           logger.error('Failed to initialize critical app functionality:', error);

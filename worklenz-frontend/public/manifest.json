@@ -56,20 +56,6 @@
       ]
     }
   ],
-  "screenshots": [
-    {
-      "src": "/assets/images/screenshot-desktop.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/assets/images/screenshot-mobile.png",
-      "sizes": "480x854",
-      "type": "image/png",
-      "form_factor": "narrow"
-    }
-  ],
   "prefer_related_applications": false,
   "related_applications": [],
   "launch_handler": {
